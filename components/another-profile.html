@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another profile</title>
+    <link href ="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800;900&family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link href = "../css/libs/normalize.css" rel = "stylesheet" type = "text/css"> 
+    <link href = "../css/libs/slick.css" rel = "stylesheet"> 
+    <link href = "../css/another-profile-style.min.css" rel = "stylesheet" type = "text/css">
+    <link href="../css/wide-head-and-foot-style.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/photo-minicard-style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <header>
+        <div class="header header-width-nav"> <!-- ЧТОБЫ ВКЛЮЧИЛАСЬ ШАПКА НЕАВТОРИЗОВАННОГО ПОЛЬЗОВАТЕЛЯ ДОБАВИТЬ КЛАСС header-unlogin -->
+            <div class="header__logo">
+                <a class="logo__link" href="/"><img src="../icons/header__logo--light.svg" alt="logo"></a>
+            </div>
+            <div class="header__position-user">
+                <div class="header__city-block-trig-link">
+                    <p class="trigger-city">Санкт-Петербург</p>
+                </div>
+                <div class="header__city-block-trig-list">
+                    <div class="city-list__container">
+                        <div class="city-list__container-inner">
+                            <div class="city-list__wrapper">
+                                <p class="city-of-list">Санкт-Петербург</p>
+                                <p class="city-of-list">Казань</p>
+                                <p class="city-of-list">Краснодар</p>
+                                <p class="city-of-list">Мурманск</p>
+                                <p class="city-of-list">Владивосток</p>
+                                <p class="city-of-list">Сочи</p>
+                                <p class="city-of-list">Самара</p>
+                                <p class="city-of-list">Омск</p>
+                                <p class="city-of-list">Новосибирск</p>
+                                <p class="city-of-list">Челябинск</p>
+                                <p class="city-of-list">Рязань</p>
+                                <p class="city-of-list">Смоленск</p>
+                                <p class="city-of-list">Тула</p>
+                                <p class="city-of-list">Ярославль</p>
+                                <p class="city-of-list">Воронеж</p>
+                                <p class="city-of-list">Саратов</p>
+                                <p class="city-of-list">Архангельск</p>
+                                <p class="city-of-list">Калининград</p>
+                                <p class="city-of-list">Чебоксары</p>
+                                <p class="city-of-list">Уфа</p>
+                                <p class="city-of-list">Чебаркуль</p>
+                                <p class="city-of-list">Екатеринбург</p>
+                                <p class="city-of-list">Пенза</p>
+                            </div>
+                            <div class="decor-op-block op-block-top"></div>
+                            <div class="decor-op-block op-block-down"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__container">
+                <nav class="menu">
+                    <ul class="wrapper__link">
+                        <li>
+                            <a href="catalog.html" class="header-menu__link menu__link-catalog">Каталог
+                                <div class="hover-cat-menu__container">
+                                    <div class="hover-cat-menu__container-inner">
+                                        <div class="hover-cat-menu__grid-cont">
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-ft-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Одежда</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Верхняя одежда</li>
+                                                        <li class="prod-categ-link">Блузы, рубашки и водолазки</li>
+                                                        <li class="prod-categ-link">Боди, Купальники и пляжная одежда</li>
+                                                        <li class="prod-categ-link">Джемперы, вязанные вещи и кардиган</li>
+                                                        <li class="prod-categ-link">Джинсы и Брюки</li>
+                                                        <li class="prod-categ-link">Домашняя одежда</li>
+                                                        <li class="prod-categ-link">Комбинезоны, Пиджаки и костюмы</li>
+                                                        <li class="prod-categ-link">Платья и сарафаны</li>
+                                                        <li class="prod-categ-link">Спорт, Футболки и поло</li>
+                                                        <li class="prod-categ-link">Толстовки/свитноты, Топы и майки</li>
+                                                        <li class="prod-categ-link">Шорты и Юбки</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Реквизиты</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Реквизиты</li>
+                                                        <li class="prod-categ-link">Оружие</li>
+                                                        <li class="prod-categ-link">Машины</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-sc-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Аксессуары</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Аксессуары для волос, парики</li>
+                                                        <li class="prod-categ-link">Головные уборы</li>
+                                                        <li class="prod-categ-link">Зонты</li>
+                                                        <li class="prod-categ-link">Косметические наборы</li>
+                                                        <li class="prod-categ-link">Очки</li>
+                                                        <li class="prod-categ-link">Перчатки и вырежки</li>
+                                                        <li class="prod-categ-link">Платки, шарфы, Ремни и Пояса</li>
+                                                        <li class="prod-categ-link">Ремни и пояса</li>
+                                                        <li class="prod-categ-link">Рюкзаки, Сумки и Чемоданы</li>
+                                                        <li class="prod-categ-link">Украшения и Часы</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Атрибутика образа</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Значки и жетоны</li>
+                                                        <li class="prod-categ-link">Нашивки</li>
+                                                        <li class="prod-categ-link">Маски</li>
+                                                        <li class="prod-categ-link">Крылья</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-th-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Обувь</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Боссоножки, Сандали и Эспадрильи</li>
+                                                        <li class="prod-categ-link">Ботильоны</li>
+                                                        <li class="prod-categ-link">Ботинки, Сапоги и Резиновая обувь</li>
+                                                        <li class="prod-categ-link">Вечерняя обувь</li>
+                                                        <li class="prod-categ-link">Домашняя обувь</li>
+                                                        <li class="prod-categ-link">Казаки и мюли</li>
+                                                        <li class="prod-categ-link">Кроссовки/кеды, Мокасины и топсайдер</li>
+                                                        <li class="prod-categ-link">Туфли</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Спец. одежда и костюмы</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Военная форма</li>
+                                                        <li class="prod-categ-link">Экипировка медицинских работников</li>
+                                                        <li class="prod-categ-link">Полиция и Росгвардия</li>
+                                                        <li class="prod-categ-link">Форма пожарного</li>
+                                                        <li class="prod-categ-link">Сценические костюмы</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="about-electio.html" class="header-menu__link about-service-btn">О сервисе</a></li>
+                        <li class="hid-for-unlogin-header"><a href="#" class="header-menu__link">Мои объявления</a></li>
+                        <li class="hid-for-unlogin-header"><a href="lk.html" class="header-menu__link menu__link-pc">Личный кабинет</a></li>
+                        <li class="unlog-header-btn"><a href="reg-form.html" class="header-menu__link hidden-btn registration-btn">Регистрация</a></li>
+                        <li class="unlog-header-btn"><a href="auth-form.html" class="header-menu__link hidden-btn authtariz-btn">Войти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-btn__sh-ch">
+                    <a class="header__link-shop" href="#">
+                        <p class="sum-circle shop-icon__sum-circle">2</p>
+                    </a>
+                    <a class="header__link-chat" href="#">
+                        <p class="sum-circle chat-icon__sum-circle">3</p>
+                    </a>
+                </div>
+                <div class="header-serch__input-block">
+                    <input class='header-ser__input' type="text" focus:{ outline: none; } placeholder='Поиск'>
+                    <img src="../icons/search-head-input-ico.svg" alt="" class="search-header-input-ico">
+                    <img src="../icons/light-explore-ico-under375.svg" alt="" class="search-header-input-ico light-under375">
+                </div>
+                <div class="burger-block">
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="burger-drop-menu__container">
+        <div class="burger-drop-menu__container-inner">
+            <div class="burger-dr-m__wrapper">
+                <div class="block-logo-city__under375">
+                    <img src="../icons/dark-logo-dm-375.svg" alt="" class="logo-ico__under375">
+                </div>
+                <div class="photo-ico-plus-name-block">
+                    <div class="burger-photo-place">
+                        <a href="lk.html"><img class="burger-photo-ico" src="../img/profile-foto.png" alt=""></a>
+                    </div>
+                    <div class="burger-name-place-block">
+                        <a href="lk.html"><span class="burger-name-text">Никки Розенфельд</span></a>
+                    </div>
+                </div>
+                <ul class="navigation-menu-wrapper">
+                    <li class="burger-tab-el"><a href="catalog.html" class="burger-link-el">Каталог</a></li>
+                    <li class="burger-tab-el"><a href="lk.html" class="burger-link-el">Личный кабинет</a></li>
+                    <li class="burger-tab-el"><a href="" class="burger-link-el">Мои обращения</a></li>
+                    <li class="burger-tab-el"><a href="about-electio.html" class="burger-link-el">О сервисе</a></li>
+                    <li class="burger-tab-el"><a class="burger-link-el choose-cities">Санкт-Петербург</a>
+                        <div class="header__city-block-trig-list">
+                            <div class="city-list__container">
+                                <div class="city-list__container-inner">
+                                    <div class="city-list__wrapper">
+                                        <p class="city-of-list">Санкт-Петербург</p>
+                                        <p class="city-of-list">Казань</p>
+                                        <p class="city-of-list">Краснодар</p>
+                                        <p class="city-of-list">Мурманск</p>
+                                        <p class="city-of-list">Владивосток</p>
+                                        <p class="city-of-list">Сочи</p>
+                                        <p class="city-of-list">Самара</p>
+                                        <p class="city-of-list">Омск</p>
+                                        <p class="city-of-list">Новосибирск</p>
+                                        <p class="city-of-list">Челябинск</p>
+                                        <p class="city-of-list">Рязань</p>
+                                        <p class="city-of-list">Смоленск</p>
+                                        <p class="city-of-list">Тула</p>
+                                        <p class="city-of-list">Ярославль</p>
+                                        <p class="city-of-list">Воронеж</p>
+                                        <p class="city-of-list">Саратов</p>
+                                        <p class="city-of-list">Архангельск</p>
+                                        <p class="city-of-list">Калининград</p>
+                                        <p class="city-of-list">Чебоксары</p>
+                                        <p class="city-of-list">Уфа</p>
+                                        <p class="city-of-list">Чебаркуль</p>
+                                        <p class="city-of-list">Екатеринбург</p>
+                                        <p class="city-of-list">Пенза</p>
+                                    </div>
+                                    <div class="decor-op-block op-block-top"></div>
+                                    <div class="decor-op-block op-block-down"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="burger-tab-el burger-exit-link"><a href="" class="burger-link-el">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="closer-window-area"></div>
+    <p class="arrow-back--mobile"><img src="../icons/arrow-back-mob.svg" alt="" class="arrow-back-ico"><span class="arrow-back--under375">Назад</span></p>
+    <section class='photo-name-display'>
+        <div class="photo-name-container">
+            <div class="profile-photo"><img src="../img/another-profile-photo.png" alt="">
+            </div>
+            <div class="info-block-plus-btn__container">
+                <div class="info-block">
+                    <div class="title-block">
+                        <h1 class="title-name">Анна Франкфурт</h1>
+                        <span><img src="../icons/check-verif-prof.svg" alt=""></span>
+                    </div>
+                    <div class='user-aren-range__container'>
+                        <p class="user__range-title">Проверенный арендодатель</p>
+                        <div class="rate-star Stars" style="--rating: 69.5;" 
+                            aria-label="Rating of this product is % out of 100"></div>
+                    </div>
+                    <!--<p class="info-block__title-adres">Адрес <a href="" class="info-block__link-adres">г. Самара, ул. Александра Невского 186 к.1  </a></p>-->
+                    <div class='user__stats-container'>
+                        <div>
+                            <p class='stats-container__number'>63</p>
+                            <p class='stats-container__descr'><b>Отзывов</b></br> от пользователей</p>
+                        </div>
+                        <div>
+                            <p class='stats-container__number'>91.70%</p>
+                            <p class='stats-container__descr'><b>Рейтинг</b></br> по мнению пользователей</p>
+                        </div>
+                        <div>
+                            <p class='stats-container__number'>116</p>
+                            <p class='stats-container__descr'><b>Объявлений</b></br> создано</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="chat-page.html"><div class="search-prod__btn">Написать</div></a>
+                <span class="second-stage__btns-container" id=''> <!--ДЛЯ АДМИНКИ КНОПКИ--> 
+                    <a href="story-confl.html" class="next-stage-btn"><!--ДЛЯ АДМИНКИ КНОПКИ--> 
+                        <button class='add-prod__prev-stage-btn' id="">Конфликты</button><!--ДЛЯ АДМИНКИ КНОПКИ--> 
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="about-me__block-text">
+            <h1 class='about-me__title'> Обо мне </h1>
+            <p class="about-me__info">Какая-то информация о себе. Если она дилнее трех строк, то все просто спускается длинющей простыней вниз до определенного количества слов, которым данное описание ограничено. Какая-то информация о себе. Если она дилнее трех строк, то все просто спускается длинющей простыней вниз до определенного количества слов, которым данное описание ограничено. Какая-то информация о себе. Если она дилнее трех строк, то все просто спускается длинющей простыней вниз
+                до определенного количества слов, которым данное описание ограничено.</p>
+        </div>
+    </section>
+    <section class="min-catalog-display admin-pannel"> <!--ADMIN PANNEL -->
+        <div class="min-catalog__wrapper-items">
+            <div class="min-catalog__item-card">
+                <div id="freeadds" class="adm-funct-lk-btn">
+                    <p class="adm-f__btn-text">Выдать бесплатные объявления</p>
+                </div>
+            </div>
+            <div class="min-catalog__item-card">
+                <div class="adm-funct-lk-btn red-card">
+                    <p class="adm-f__btn-text">Заблокировать пользователя</p>
+                </div>
+            </div>
+            <div class="min-catalog__item-card">
+                <div class="adm-funct-lk-btn yellow-card">
+                    <p class="adm-f__btn-text">Личная аналитика</p>
+                </div>
+            </div>
+            <div id="adm-appoint" class="min-catalog__item-card">
+                <div class="adm-funct-lk-btn green-card">
+                    <p class="adm-f__btn-text">Повысить до администратора</p>
+                </div>
+            </div>
+            <div class="min-catalog__item-card">
+                <div class="adm-funct-lk-btn purple-card">
+                    <p class="adm-f__btn-text">Выдать бесплатные объявления</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comment-user-display">
+        <div class="comments-container">
+            <h1 class='about-me__title'> Отзывы</h1>
+            <div class="comment-card__wrapper">
+                <div class="comment-card__photo-icon"></div>
+                <div class="text-comment-block__container">
+                    <div class="name-and-date__container">
+                        <h1 class="comment__title-name">Евгения Луи</h1>
+                        <div class='item-card-descr-icons'> <!-- АДМИНСКА ФУНКЦИЯ  -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                        </div>
+                        <div class="comment__date">18.08.2020</div>
+                    </div>
+                    <div class='user-arend-range__container'>
+                        <div class="rate-star Stars" style="--rating: 69.5;" 
+                            aria-label="Rating of this product is % out of 100"></div>
+                        <a href='#'><div class="comments-count">132 отзыва</div></a>
+                    </div>
+                    <div class="comments-product">
+                        <p class='comments-product__link'>Товар: <a href="#" class="info-block__link-adres">Фотоаппарат Зенит</a></p>
+                    </div>
+                    <p class="comment-card__text text__drop-text" id='elem1'>Рад, что моянда на Сервисе была</p>
+                    <a href="#" class="text-block__more-details__link"></a>
+                    <div class="more-less-btn__container comment-btn btn-more">Подробнее</div>
+                </div>
+            </div>
+            <div class="comment-card__wrapper">
+                <div class="comment-card__photo-icon"></div>
+                <div class="text-comment-block__container">
+                    <div class="name-and-date__container">
+                        <h1 class="comment__title-name">Евгения Луи</h1>
+                        <div class='item-card-descr-icons'> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                        </div>
+                        <div class="comment__date">18.08.2020</div>
+                    </div>
+                    <div class='user-arend-range__container'>
+                        <div class="rate-star Stars" style="--rating: 69.5;" 
+                            aria-label="Rating of this product is % out of 100"></div>
+                        <a href='#'><div class="comments-count">132 отзыва</div></a>
+                    </div>
+                    <div class="comments-product">
+                        <p class='comments-product__link'>Товар: <a href="#" class="info-block__link-adres">Фотоаппарат Зенит</a></p>
+                    </div>
+                    <p class="comment-card__text text__drop-text" id='elem2'>Рада была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии. О небольшом дефекте      (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии.         О небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была у Дмитрия. Рад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии. О небольшом дефекте       (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии.         О небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была                           у ДмитрияРад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек.          Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии. О небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая.</p>
+                    <a href="#" class="text-block__more-details__link"></a>
+                    <div class="more-less-btn__container comment-btn btn-more">Подробнее</div>
+                </div>
+            </div>
+            <div class="comment-card__wrapper">
+                <div class="comment-card__photo-icon"></div>
+                <div class="text-comment-block__container">
+                    <div class="name-and-date__container">
+                        <h1 class="comment__title-name">Евгения Луи</h1>
+                        <div class='item-card-descr-icons'> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico"> <!-- АДМИНСКА ФУНКЦИЯ -->
+                        </div>
+                        <div class="comment__date">18.08.2020</div>
+                    </div>
+                    <div class='user-arend-range__container'>
+                        <div class="rate-star Stars" style="--rating: 69.5;" 
+                            aria-label="Rating of this product is % out of 100"></div>
+                        <a href='#'><div class="comments-count">132 отзыва</div></a>
+                    </div>
+                    <div class="comments-product">
+                        <p class='comments-product__link'>Товар: <a href="#" class="info-block__link-adres">Фотоаппарат Зенит</a></p>
+                    </div>
+                    <p class="comment-card__text text__drop-text" id='elem3'>Рад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии. О небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии.О  небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была у Дмитрия. Рад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии. О небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии. О небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая. Претензий никаких нет. Рад, что моя первая аренда на Сервисе была у ДмитрияРад, что моя первая аренда на Сервисе была у Дмитрия. Честный и адекватный человек. Без проблем связались в воцапе и по телефону. Вещь предоставил в отличном состоянии. О небольшом дефекте (и несущественном в моем случае) Дмитрий сообщил заранее. Цена, как мне кажется, справедливая.</p>
+                    <a href="" class="text-block__more-details__link"></a>
+                    <div class="more-less-btn__container comment-btn btn-more">Подробнее</div>
+                </div>
+            </div>
+            <a href='#'><div class="btn-edit-prof">Показать больше</div></a>
+        </div>
+    </section>
+    <section class="user-personal-catalog-display">
+        <h1 class="min-catalog__title"> Каталог <a>Анны Ф.</a></h1>
+        <p class="min-catalog__text"> Здесь располагаются все товары, которые сдает пользователь <a>Анна Ф.</a></p>
+        <div class="ready-made__container-grid" id='clickForAddFav'>
+            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png" width="99%" alt="">
+                <div class="ready-made-item__text-block">
+                    <p class="ready-mate-text-block__title">Яркое детство</p>
+                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный повседневный образ для ребенка</p>
+                    <!-- <a href="#" class="ready-mate-text-block__link">Подробнее</a> -->
+                    <div class="item__drop-cost">
+                        <a>2400 руб/сут</a>
+                        <div class='item-card-descr-icons'> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu disabled"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb disabled"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico disabled"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye"> <!--ТОЛЬКО ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ (удали disabled)-->
+                        </div>
+                    </div>
+                </div>
+                <img src="../icons/add-favorites-icon.svg" alt="" class="add-favorites-icon" id="favoritesico">
+                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+            </div>
+            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png" width="99%" alt="">
+                <div class="ready-made-item__text-block">
+                    <p class="ready-mate-text-block__title">Яркое детство</p>
+                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный повседневный образ для ребенка</p>
+                    <!-- <a href="#" class="ready-mate-text-block__link">Подробнее</a> -->
+                    <div class="item__drop-cost">
+                        <a>2400 руб/сут</a>
+                        <div class='item-card-descr-icons'> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye disabled"> <!--ТОЛЬКО ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ (удали disabled)-->
+                        </div>
+                    </div>
+                </div>
+                <img src="../icons/add-favorites-icon.svg" alt="" class="add-favorites-icon" id="favoritesico">
+                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+            </div>
+            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png" width="100%" alt="">
+                <div class="ready-made-item__text-block">
+                    <p class="ready-mate-text-block__title">Яркое детство</p>
+                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный повседневный образ для ребенка</p>
+                    <!-- <a href="#" class="ready-mate-text-block__link">Подробнее</a> -->
+                    <div class="item__drop-cost">
+                        <a>2400 руб/сут</a>
+                        <div class='item-card-descr-icons'> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye disabled"> <!--ТОЛЬКО ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ (удали disabled)-->
+                        </div>
+                    </div>
+                </div>
+                <img src="../icons/add-favorites-icon.svg" alt="" class="add-favorites-icon" id="favoritesico">
+                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+            </div>
+            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png" width="99%" alt="">
+                <div class="ready-made-item__text-block">
+                    <p class="ready-mate-text-block__title">Яркое детство</p>
+                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный повседневный образ для ребенка</p>
+                    <!-- <a href="#" class="ready-mate-text-block__link">Подробнее</a> -->
+                    <div class="item__drop-cost">
+                        <a>2400 руб/сут</a>
+                        <div class='item-card-descr-icons'> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye disabled"> <!--ТОЛЬКО ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ (удали disabled)-->
+                        </div>
+                    </div>
+                </div>
+                <img src="../icons/add-favorites-icon.svg" alt="" class="add-favorites-icon" id="favoritesico">
+                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+            </div>
+            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png" width="99%" alt="">
+                <div class="ready-made-item__text-block">
+                    <p class="ready-mate-text-block__title">Яркое детство</p>
+                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный повседневный образ для ребенка</p>
+                    <!-- <a href="#" class="ready-mate-text-block__link">Подробнее</a> -->
+                    <div class="item__drop-cost">
+                        <a>2400 руб/сут</a>
+                        <div class='item-card-descr-icons'> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-edit-ico.svg" alt="" class="item__card-ico item__drop-card-menu"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-rubbish-ico.svg" alt="" class="item__card-ico item__drop-rubb"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/my-add-card-menu-ico.svg" alt="" class="item__card-ico"> <!-- ФУНКЦИЯ АДМИНА -->
+                            <img src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye disabled"> <!--ТОЛЬКО ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ (удали disabled)-->
+                        </div>
+                    </div>
+                </div>
+                <img src="../icons/add-favorites-icon.svg" alt="" class="add-favorites-icon" id="favoritesico">
+                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+            </div>
+            <!-- <div class="ready-made-container__item pump-static-card__bg"><img class='cat-catd__diamond-icon' src="../icons/cat-card__diamond-icon.svg" alt="">
+                <p class="ready-mate-text-block__title">Ты можешь больше!</p>
+                <a href='#'><div class="btn-edit-prof">Прокачаться</div></a>
+            </div> -->
+        </div>
+    </section>
+    <section class="page__modal-filters">
+        <div class="win-prod__bg-container">
+            <div class="modal-win__product-wrapper">
+                <div class="product-name-block-and-fav-btn">
+                    <img src="../icons/big-heart-prod-mini-card-under1000.svg" alt="" class="big-heart-under1000-fav-ico">
+                    <span class="prod-name-place">Платье Роза</span>
+                </div>
+                <img src="../icons/del-img-ico.svg" class="close-ico-under1000-modal-cart" alt="">
+                <div class="card-prod__zoom-inner">
+                    <div class="test1"> 
+                        <div class="heart-click"></div>
+                        <img class="prod-favour-ico prod-cart-heart" id='favourIcoClick' src="../icons/prod-favour-ico.svg" alt="">
+                    </div>
+                    <div class="for-btns__container">
+                        <div class="photo-prod--slick-slide-container">
+                            <img src="../img/modal-cat-prod-inner-photo.png" alt="" class="card-prod-photo--slick">
+                            <img src="../img/modal-cat-prod-inner-photo.png" alt="" class="card-prod-photo--slick">
+                            <img src="../img/modal-cat-prod-inner-photo.png" alt="" class="card-prod-photo--slick">
+                        </div>
+                    </div>  
+                    <div class="zoom-prod__text-wrapper">
+                        <div class="title-block-with-star">
+                            <h1 class="zoom-prod__title"><a href="product-page.html" class="">Платье Роза</a></h1>
+                            <div class="rate-star Stars" style="--rating: 69.5;" aria-label="Rating of this product is % out of 100"></div>
+                        </div>
+                        <div class="spec-info__wrapper">
+                            <div class="sp-info_col spec-info__ft-col">
+                                <p class="spec-info__par">Материал<span class="spec-info__link">Металл, Стекло</span></p>
+                                <p class="spec-info__par">Цвет<span class="spec-info__link">Черный</span></p>
+                                <p class="spec-info__par">Узор<span class="spec-info__link">Клетка</span></p>
+                                <p class="spec-info__par">Размер<span class="spec-info__link">XXL</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                                <p class="spec-info__par">Длина<span class="spec-info__link">192 см</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                            </div>
+                            <div class="sp-info_col spec-info__sc-col">
+                                <p class="spec-info__par">Материал<span class="spec-info__link">Металл, Стекло</span></p>
+                                <p class="spec-info__par">Цвет<span class="spec-info__link">Черный</span></p>
+                                <p class="spec-info__par">Узор<span class="spec-info__link">Клетка</span></p>
+                                <p class="spec-info__par">Размер<span class="spec-info__link">XXL</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                                <p class="spec-info__par">Длина<span class="spec-info__link">192 см</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                            </div>
+                        </div>
+                        <div class="arend-cost__info-wrapper">
+                            <p class="arend-cost__text">Аренда на 3 суток - 8 000 ₽</p>
+                            <p class="arend-cost__text">Аренда на 7 суток - 18 000 ₽</p>
+                            <p class="arend-cost__main-text">2400 ₽ / сут</p>
+                        </div>
+                        <div class="system-notice__card-btns">
+                            <a href='#'><div class="system-card__first-btn">В корзину</div></a>
+                            <a href='#'><div class="system-card__second-btn">Забронировать</div></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="modal__close-ico" src="../icons/photo-modal-close-icon.svg" alt="">
+            </div>          
+        </div>
+    </section>
+    <form class="modal-window free-adds-w disabled" method="POST" action=""> <!--ADMIN WINDOW-->
+        <div class="modal-w__item-container">
+            <div class="modal-w__inner-container free-adds-m disabled">
+                <h1 class="modal-inner__title">Бесплатные объявления</h1>
+                <div class="free-adds-inputs__container">
+                    <h3 class="free-adds__cont__title">Вы можете подарить пользователю одно или несколько 
+                        бесплатных объявлений в качестве компенсации или поощрения</h3>
+                    <div class="select-free__container-grid">
+                        <div class="select-choose__wrapper"> 
+                            <h3 class="input-name__title">Количество объявлений</h3>
+                            <h3 class="input-name__title sub-text">Выберите участника диалога, на которого накладывается санкция</h3>
+                            <div class="counter-wrapper-m">
+                                <div class="counter-wrapper">
+                                    <img src="../icons/minus-ico.svg" alt="" class="counter-ico counter-minus-ico">
+                                    <div class="counter-box"> 
+                                        <input id='count-num' class='counter-number' type="text" focus:{ outline: none; } onkeyup="this.value = this.value.replace(/[^\d]/g,'');" placeholder="0">
+                                    </div>
+                                    <!-- <p id='count-num' class="counter-number">0</p> -->
+                                    <img src="../icons/plus-ico.svg" alt="" class="counter-ico counter-plus-ico">
+                                </div>
+                                <img id="CounterCheck" class='check-ico' src="../icons/form--unfilled-ico.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="select-choose__wrapper"> 
+                            <h3 class="input-name__title">Срок действия</h3>
+                            <h3 class="input-name__title sub-text">Выберите участника диалога, на которого накладывается санкция</h3>
+                            <div class="input__wrapper selecter__wrapper">
+                                <select class='select__new-style write-place--fill' placeholder='' type="text" required readonly>
+                                    <option id="" class="sel__placehold" value="" style="color: #bfbfc8 !important;" selected disabled>1 день</option>
+                                    <option class="sel-opt__new" value="value1">1 месяц</option> <!-- без изменений в css количество не добавить-->
+                                    <option class="sel-opt__new" value="value1">2 месяца</option> 
+                                    <option class="sel-opt__new" value="value1">3 месяца</option> 
+                                    <option class="sel-opt__new" value="value1">4 месяца</option> 
+                                    <option class="sel-opt__new" value="value1">5 месяцев</option> 
+                                    <option class="sel-opt__new" value="value1">6 месяцев</option> 
+                                    <option class="sel-opt__new" value="value1">Бессрочно</option> 
+                                </select>
+                                <img class='select-check-ico' src="../icons/form--unfilled-ico.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="select-choose__wrapper"> 
+                            <h3 class="input-name__title">Причина выдачи</h3>
+                            <h3 class="input-name__title sub-text">Выберите штрафную санкцию</h3>
+                            <div class="input__wrapper selecter__wrapper">
+                                <select id="select" class='select__new-style write-place--fill' placeholder='' type="text" required readonly>
+                                    <option id="" class="sel__placehold" value="" style="color: #bfbfc8 !important;" selected disabled>Компенсация</option> <!-- без изменений в css количество не добавить-->
+                                    <option class="sel-opt__new"  value="value1">Ничего за ничего</option> 
+                                    <option class="sel-opt__new"  value="value1">Давно пора</option>
+                                </select>
+                                <img class='select-check-ico' src="../icons/form--unfilled-ico.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- <div class="select-choose__wrapper"> 
+                            <p class="modal-window__descr-select">Помните, что за невозврат взятогй в аренду вещи,
+                                оборудования, а также реквизита, владелец вещи может назначить
+                                дополнительную опталу. Пожалуйста, не забывайте предупредать 
+                                владельцев о возможных опозданиях! :)</p>
+                            <p class="modal-window__descr-select">Когда счетчик аренды завершит отчет, вы должны 
+                                вернуть товар арендодателю. Также после окончания аренды вам 
+                                станет доступно написание отзыва об арендодателе. </p>
+                        </div> -->
+                    </div>
+                    <div class="second-stage__btns-container" id='btn-rent'>
+                        <input type='submit' class="add-prod__next-stage-btn" value="Назначить взыскание">
+                        <a class="next-stage-btn"><div class='add-prod__prev-stage-btn mw-cancel-btn' id="">Назад</div></a>
+                    </div>
+                </div>
+                <img src="../icons/close-ico.svg" alt="" class="close-ico-window">
+            </div>
+            <div class="modal-w__inner-container inner-attention win-adm-app--active disabled">
+                <h1 class="modal-inner__title">Внимание!</h1>
+                <div class="free-adds-inputs__container attention">
+                    <h3 class="free-adds__cont__title">При назначении администратором, пользователь начнет обладать 
+                        правами, которые, в том числе, могут повредить</h3>
+                    <div class="select-free__container-grid">
+                        <div class="select-choose__wrapper"> 
+                            <h3 class="input-name__title">Должность</h3>
+                            <h3 class="input-name__title sub-text">Выберите должность, до которой хотите повысить данного пользователя</h3>
+                            <div class="input__wrapper selecter__wrapper">
+                                <select class='select__new-style write-place--fill' placeholder='' type="text" required readonly>
+                                    <option id="" class="sel__placehold" value="" style="color: #bfbfc8 !important;" selected disabled>Выберите участника</option>
+                                    <option class="sel-opt__new" value="value1">Супер администратор</option> <!-- без изменений в css количество не добавить-->
+                                    <option class="sel-opt__new" value="value1">Администратор</option> 
+                                    <option class="sel-opt__new" value="value1">Пользователь</option> 
+                                </select>
+                                <img class='select-check-ico' src="../icons/form--unfilled-ico.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- <div class="select-choose__wrapper"> 
+                            <p class="modal-window__descr-select attention-page">Помните, что за невозврат взятогй в аренду вещи,
+                                оборудования, а также реквизита, владелец вещи может назначить
+                                дополнительную опталу. Пожалуйста, не забывайте предупредать 
+                                владельцев о возможных опозданиях! :)</p>
+                        </div> -->
+                        <div class="select-choose__wrapper"> 
+                            <h3 class="input-name__title">Подтвердите</h3>
+                            <h3 class="input-name__title sub-text">Напишите слово “Подтверждаю”, чтобы изменения вступили в силу</h3>
+                            <div class="input__wrapper">
+                                <input 
+                                class='name-profile__input' 
+                                type="text" focus:{ outline: none; }
+                                placeholder='Проверка'>
+                                <img class='select-check-ico' src="../icons/form--unfilled-ico.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-stage__btns-container" id='btn-rent'>
+                        <input type='submit' class="add-prod__next-stage-btn" value="Назначить администратором">
+                        <a class="next-stage-btn"><div class='add-prod__prev-stage-btn mw-cancel-btn' id="">Отмена</div></a>
+                    </div>
+                </div>
+                <img src="../icons/close-ico.svg" alt="" class="close-ico-window">
+            </div>
+        </div>
+    </form>
+    <footer class="footer aut__footer">
+        <div class="container">
+            <div class="footer__electio-info">
+                <a class="electio-info__link" href=""> Правила пользования сайтом</a>
+                <a class="electio-info__link footer-info__doc" href=""> Документация</a>
+                <a class="electio-info__link footer-info__faq" href=""> FAQ</a>
+                <a class="electio-info__link link-author" href=""> © Electio 2020</a>
+            </div>
+            <div class="footer__electio-contacts">
+                <div class="footer__social-btn-cont">
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__tw" href="#">Чат с администрацией</a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__be" href="#"></a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__inst" href="#"></a>
+                </div>
+                <div class="footer__another-cont">
+                    <a class="electio-info__link" href="#">something@gmail.com</a>
+                    <a class="electio-info__link" href="#">+8 (812) 123-45-67</a>
+                    <a class="electio-info__link link-city" href="#">Россия</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='../js/jquery.formstyler.min.js'></script>
+    <script src="../js/slick.min.js"></script>
+    <script type = 'text/javascript' src='../js/libs/fav-ico-change.js'></script>
+    <script type = 'text/javascript' src='../js/libs/anot-pr.js'></script>
+    <script type = 'text/javascript' src='../js/libs/mark-script.js'></script>
+    <script type = 'text/javascript' src='../js/libs/CounterCheck.js'></script>
+    <script type = 'text/javascript' src='../js/libs/myprofile.js'></script>
+    <script type = 'text/javascript' src='../js/libs/product-p-script.js'></script>
+    <script type = 'text/javascript' src='../js/libs/scroll-header.js'></script>
+</body>
+</html>

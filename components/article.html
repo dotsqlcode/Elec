@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800;900&family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link href="../css/libs/normalize.css" rel="stylesheet" type="text/css">
+    <link href = "../css/libs/slick.css" rel = "stylesheet"> 
+    <link href="../css/article.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/wide-head-and-foot-style.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/photo-minicard-style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="header header-width-nav"> <!-- ЧТОБЫ ВКЛЮЧИЛАСЬ ШАПКА НЕАВТОРИЗОВАННОГО ПОЛЬЗОВАТЕЛЯ ДОБАВИТЬ КЛАСС header-unlogin -->
+            <div class="header__logo">
+                <a class="logo__link" href="/"><img src="../icons/header__logo--light.svg" alt="logo"></a>
+            </div>
+            <div class="header__position-user">
+                <div class="header__city-block-trig-link">
+                    <p class="trigger-city">Санкт-Петербург</p>
+                </div>
+                <div class="header__city-block-trig-list">
+                    <div class="city-list__container">
+                        <div class="city-list__container-inner">
+                            <div class="city-list__wrapper">
+                                <p class="city-of-list">Санкт-Петербург</p>
+                                <p class="city-of-list">Казань</p>
+                                <p class="city-of-list">Краснодар</p>
+                                <p class="city-of-list">Мурманск</p>
+                                <p class="city-of-list">Владивосток</p>
+                                <p class="city-of-list">Сочи</p>
+                                <p class="city-of-list">Самара</p>
+                                <p class="city-of-list">Омск</p>
+                                <p class="city-of-list">Новосибирск</p>
+                                <p class="city-of-list">Челябинск</p>
+                                <p class="city-of-list">Рязань</p>
+                                <p class="city-of-list">Смоленск</p>
+                                <p class="city-of-list">Тула</p>
+                                <p class="city-of-list">Ярославль</p>
+                                <p class="city-of-list">Воронеж</p>
+                                <p class="city-of-list">Саратов</p>
+                                <p class="city-of-list">Архангельск</p>
+                                <p class="city-of-list">Калининград</p>
+                                <p class="city-of-list">Чебоксары</p>
+                                <p class="city-of-list">Уфа</p>
+                                <p class="city-of-list">Чебаркуль</p>
+                                <p class="city-of-list">Екатеринбург</p>
+                                <p class="city-of-list">Пенза</p>
+                            </div>
+                            <div class="decor-op-block op-block-top"></div>
+                            <div class="decor-op-block op-block-down"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__container">
+                <nav class="menu">
+                    <ul class="wrapper__link">
+                        <li>
+                            <a href="catalog.html" class="header-menu__link menu__link-catalog">Каталог
+                                <div class="hover-cat-menu__container">
+                                    <div class="hover-cat-menu__container-inner">
+                                        <div class="hover-cat-menu__grid-cont">
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-ft-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Одежда</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Верхняя одежда</li>
+                                                        <li class="prod-categ-link">Блузы, рубашки и водолазки</li>
+                                                        <li class="prod-categ-link">Боди, Купальники и пляжная одежда</li>
+                                                        <li class="prod-categ-link">Джемперы, вязанные вещи и кардиган</li>
+                                                        <li class="prod-categ-link">Джинсы и Брюки</li>
+                                                        <li class="prod-categ-link">Домашняя одежда</li>
+                                                        <li class="prod-categ-link">Комбинезоны, Пиджаки и костюмы</li>
+                                                        <li class="prod-categ-link">Платья и сарафаны</li>
+                                                        <li class="prod-categ-link">Спорт, Футболки и поло</li>
+                                                        <li class="prod-categ-link">Толстовки/свитноты, Топы и майки</li>
+                                                        <li class="prod-categ-link">Шорты и Юбки</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Реквизиты</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Реквизиты</li>
+                                                        <li class="prod-categ-link">Оружие</li>
+                                                        <li class="prod-categ-link">Машины</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-sc-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Аксессуары</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Аксессуары для волос, парики</li>
+                                                        <li class="prod-categ-link">Головные уборы</li>
+                                                        <li class="prod-categ-link">Зонты</li>
+                                                        <li class="prod-categ-link">Косметические наборы</li>
+                                                        <li class="prod-categ-link">Очки</li>
+                                                        <li class="prod-categ-link">Перчатки и вырежки</li>
+                                                        <li class="prod-categ-link">Платки, шарфы, Ремни и Пояса</li>
+                                                        <li class="prod-categ-link">Ремни и пояса</li>
+                                                        <li class="prod-categ-link">Рюкзаки, Сумки и Чемоданы</li>
+                                                        <li class="prod-categ-link">Украшения и Часы</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Атрибутика образа</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Значки и жетоны</li>
+                                                        <li class="prod-categ-link">Нашивки</li>
+                                                        <li class="prod-categ-link">Маски</li>
+                                                        <li class="prod-categ-link">Крылья</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-th-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Обувь</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Боссоножки, Сандали и Эспадрильи</li>
+                                                        <li class="prod-categ-link">Ботильоны</li>
+                                                        <li class="prod-categ-link">Ботинки, Сапоги и Резиновая обувь</li>
+                                                        <li class="prod-categ-link">Вечерняя обувь</li>
+                                                        <li class="prod-categ-link">Домашняя обувь</li>
+                                                        <li class="prod-categ-link">Казаки и мюли</li>
+                                                        <li class="prod-categ-link">Кроссовки/кеды, Мокасины и топсайдер</li>
+                                                        <li class="prod-categ-link">Туфли</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Спец. одежда и костюмы</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Военная форма</li>
+                                                        <li class="prod-categ-link">Экипировка медицинских работников</li>
+                                                        <li class="prod-categ-link">Полиция и Росгвардия</li>
+                                                        <li class="prod-categ-link">Форма пожарного</li>
+                                                        <li class="prod-categ-link">Сценические костюмы</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="about-electio.html" class="header-menu__link about-service-btn">О сервисе</a></li>
+                        <li class="hid-for-unlogin-header"><a href="#" class="header-menu__link">Мои объявления</a></li>
+                        <li class="hid-for-unlogin-header"><a href="lk.html" class="header-menu__link menu__link-pc">Личный кабинет</a></li>
+                        <li class="unlog-header-btn"><a href="reg-form.html" class="header-menu__link hidden-btn registration-btn">Регистрация</a></li>
+                        <li class="unlog-header-btn"><a href="auth-form.html" class="header-menu__link hidden-btn authtariz-btn">Войти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-btn__sh-ch">
+                    <a class="header__link-shop" href="#">
+                        <p class="sum-circle shop-icon__sum-circle">2</p>
+                    </a>
+                    <a class="header__link-chat" href="#">
+                        <p class="sum-circle chat-icon__sum-circle">3</p>
+                    </a>
+                </div>
+                <div class="header-serch__input-block">
+                    <input class='header-ser__input' type="text" focus:{ outline: none; } placeholder='Поиск'>
+                    <img src="../icons/search-head-input-ico.svg" alt="" class="search-header-input-ico">
+                    <img src="../icons/light-explore-ico-under375.svg" alt="" class="search-header-input-ico light-under375">
+                </div>
+                <div class="burger-block">
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="burger-drop-menu__container">
+        <div class="burger-drop-menu__container-inner">
+            <div class="burger-dr-m__wrapper">
+                <div class="block-logo-city__under375">
+                    <img src="../icons/dark-logo-dm-375.svg" alt="" class="logo-ico__under375">
+                </div>
+                <div class="photo-ico-plus-name-block">
+                    <div class="burger-photo-place">
+                        <a href="lk.html"><img class="burger-photo-ico" src="../img/profile-foto.png" alt=""></a>
+                    </div>
+                    <div class="burger-name-place-block">
+                        <a href="lk.html"><span class="burger-name-text">Никки Розенфельд</span></a>
+                    </div>
+                </div>
+                <ul class="navigation-menu-wrapper">
+                    <li class="burger-tab-el"><a href="catalog.html" class="burger-link-el">Каталог</a></li>
+                    <li class="burger-tab-el"><a href="lk.html" class="burger-link-el">Личный кабинет</a></li>
+                    <li class="burger-tab-el"><a href="" class="burger-link-el">Мои обращения</a></li>
+                    <li class="burger-tab-el"><a href="about-electio.html" class="burger-link-el">О сервисе</a></li>
+                    <li class="burger-tab-el"><a class="burger-link-el choose-cities">Санкт-Петербург</a>
+                        <div class="header__city-block-trig-list">
+                            <div class="city-list__container">
+                                <div class="city-list__container-inner">
+                                    <div class="city-list__wrapper">
+                                        <p class="city-of-list">Санкт-Петербург</p>
+                                        <p class="city-of-list">Казань</p>
+                                        <p class="city-of-list">Краснодар</p>
+                                        <p class="city-of-list">Мурманск</p>
+                                        <p class="city-of-list">Владивосток</p>
+                                        <p class="city-of-list">Сочи</p>
+                                        <p class="city-of-list">Самара</p>
+                                        <p class="city-of-list">Омск</p>
+                                        <p class="city-of-list">Новосибирск</p>
+                                        <p class="city-of-list">Челябинск</p>
+                                        <p class="city-of-list">Рязань</p>
+                                        <p class="city-of-list">Смоленск</p>
+                                        <p class="city-of-list">Тула</p>
+                                        <p class="city-of-list">Ярославль</p>
+                                        <p class="city-of-list">Воронеж</p>
+                                        <p class="city-of-list">Саратов</p>
+                                        <p class="city-of-list">Архангельск</p>
+                                        <p class="city-of-list">Калининград</p>
+                                        <p class="city-of-list">Чебоксары</p>
+                                        <p class="city-of-list">Уфа</p>
+                                        <p class="city-of-list">Чебаркуль</p>
+                                        <p class="city-of-list">Екатеринбург</p>
+                                        <p class="city-of-list">Пенза</p>
+                                    </div>
+                                    <div class="decor-op-block op-block-top"></div>
+                                    <div class="decor-op-block op-block-down"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="burger-tab-el burger-exit-link"><a href="" class="burger-link-el">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="closer-window-area"></div>
+    <div class="article-inputs-form">
+        <p class="arrow-back--mobile"><img src="../icons/arrow-back-mob.svg" alt="" class="arrow-back-ico"><span class="arrow-back--under375">Назад</span></p>
+        <div class="article-form__container">
+            <div class="article-form__inner-container">
+                <section class='article-form-display'>
+                    <label for="first-photo" class="ft-photo-inner-label">
+                        <img src="../icons/under-title-text2.svg" alt="" class="under-photo-text">
+                        <div class="ft-photo-block" id="first-photo-block">
+                            <div class="for-first-photo__container">
+                                <img src="../img/article-ft-photo.png" alt="" class="articl-ft-photo">
+                            </div>   
+                            <!-- <img src="../icons/article-import-img-ico.svg" alt="" class="article__photo-add-icon"> -->
+                            <div class='textareas-container'>
+                                <p name="article-title" type="text" class='text-over__title'>Манящая Азия</p>
+                                <p name="article-title" type="text" class='text-over__title sub__text'>
+                                    Сyberpunk – мир фантастических фильмов,
+                                    видеоигр и далекого будущего с невероятными технологиями,
+                                    роботами и своим видением картины</p>
+                            </div>
+                        </div>
+                    </label>
+                </section>
+                <div class="for-grid-ft-form__container">
+                    <section class="article-main-inputs for-grid-ft">
+                        <p class="ft-paragraph-text">Технологическая революция 20-го века принесла много
+                            возможностей и катком проехалась по жизням миллионов людей.
+                            Возрастала автоматизация производств, ускорился темп
+                            жизни, увеличилось количество информации. </p>
+                        <p class="ft-paragraph-text">Машины, ракеты, роботы, искусственные материалы,
+                            алгоритмы и сети начали стремительно проникать в
+                            повседневность. Искусство реагировало на изменения научной
+                            фантастикой, антиутопией и киберпанком. И хотя четкого
+                            жанрового определения у киберпанка нет, давайте
+                            разберемся, откуда ноги растут.</p>
+                    </section>
+                </div>
+                <section class="sc-foto-article-display">
+                    <label for="second-photo" class="ft-photo-inner-label">
+                        <div class="ft-photo-block sc-photo--modify" id="second-photo-block">
+                            <img src="../img/aritcle-sc-photo.png" alt="" class="articl-sc-photo">
+                            <p class="on-photo-text">Безупречное <span class="on-photo-sc-str">сочетание</span></p>
+                            <img src="../icons/on-photo-svg.svg" alt="" class="articl-sc-photo on-photo-svg">
+                        </div>
+                    </label>
+                </section>
+                <section class="article-main-inputs">
+                    <p class="ft-paragraph-text">Технологическая революция 20-го века принесла много
+                        возможностей и катком проехалась по жизням миллионов людей.
+                        Возрастала автоматизация производств, ускорился темп
+                        жизни, увеличилось количество информации. </p>
+                    <p class="ft-paragraph-text">Машины, ракеты, роботы, искусственные материалы,
+                        алгоритмы и сети начали стремительно проникать в
+                        повседневность. Искусство реагировало на изменения научной
+                        фантастикой, антиутопией и киберпанком. И хотя четкого
+                        жанрового определения у киберпанка нет, давайте
+                        разберемся, откуда ноги растут.</p>
+                </section>
+                <section class="th-foto-article-display">
+                    <label for="third-photo" class="ft-photo-inner-label">
+                        <div class="ft-photo-block th-photo--modify" id="third-photo-block">
+                            <img src="../img/article-th-photo.jpg" alt="" class="articl-sc-photo">
+                        </div>
+                    </label>
+                </section>
+                <section class="article-main-inputs">
+                    <p class="ft-paragraph-text">Технологическая революция 20-го века принесла много
+                        возможностей и катком проехалась по жизням миллионов людей.
+                        Возрастала автоматизация производств, ускорился темп
+                        жизни, увеличилось количество информации. </p>
+                    <p class="ft-paragraph-text">Машины, ракеты, роботы, искусственные материалы,
+                        алгоритмы и сети начали стремительно проникать в
+                        повседневность. Искусство реагировало на изменения научной
+                        фантастикой, антиутопией и киберпанком. И хотя четкого
+                        жанрового определения у киберпанка нет, давайте
+                        разберемся, откуда ноги растут.</p>
+                </section>
+                <div class="fourth-photos-display">
+                    <div class="fourt-phot__grid-container">
+                        <div class="four-img-cont fourt-first-img">
+                            <img src="../img/article-fourth-photo1.jpg" alt="" class="article-four-photo">
+                        </div>
+                        <div class="four-img-cont fourt-second-img">
+                            <img src="../img/article-fourth-photo2.jpg" alt="" class="article-four-photo">
+                        </div>
+                        <div class="four-img-cont fourt-third-img">
+                            <img src="../img/article-fourth-photo3.jpg" alt="" class="article-four-photo">
+                        </div>
+                    </div>
+                </div>
+                <h1 class="compon-pic__title">Составляющие образа</h1>
+                <section class="component-picture">
+                    <section class="article-main-inputs">
+                        <p class="ft-paragraph-text">Гибкая система аренды позволяет арендодателю и арендатору
+                            сотрудничать и не тратить лишнее время на поиск друг друга. Electio - удобный сервис по
+                            аренде и прокату кинооборудования, в котором вы можете сдать в аренду или арендовать любые
+                            товары для съемок в пару кликов
+                            Electio - удобный сервис по аренде и прокату кинооборудования, в котором вы можете сдать в
+                            аренду или арендовать любые товары для съемок в пару кликов
+                            Electio - удобный сервис по аренде и прокату кинооборудования, в котором вы можете сдать в
+                            аренду или арендовать любые товары для съемок в пару кликов
+                            Electio - удобный сервис по аренде и прокату кинооборудования, в котором вы можете сдать в
+                            аренду или арендовать любые товары для съемок в пару кликов
+                        </p>
+                    </section>
+                    <setion class="compon-poc__grid-cont">
+                        <div class="ready-made__container-grid" id=''>
+                            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png"
+                                    width="100%" alt="">
+                                <div class="ready-made-item__text-block">
+                                    <p class="ready-mate-text-block__title">Фотоаппарат Зенит</p>
+                                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный
+                                        повседневный образ для ребенка</p>
+                                    <div class="item__drop-cost"><a>2400 руб/сут</a><img
+                                            src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye"></div>
+                                </div>
+                                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+                            </div>
+                            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png"
+                                    width="100%" alt="">
+                                <div class="ready-made-item__text-block">
+                                    <p class="ready-mate-text-block__title">Фотоаппарат Зенит</p>
+                                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный
+                                        повседневный образ для ребенка</p>
+                                    <div class="item__drop-cost"><a>2400 руб/сут</a><img
+                                            src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye"></div>
+                                </div>
+                                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+                            </div>
+                            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png"
+                                    width="100%" alt="">
+                                <div class="ready-made-item__text-block">
+                                    <p class="ready-mate-text-block__title">Фотоаппарат Зенит</p>
+                                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный
+                                        повседневный образ для ребенка</p>
+                                    <div class="item__drop-cost"><a>2400 руб/сут</a><img
+                                            src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye"></div>
+                                </div>
+                                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+                            </div>
+                            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png"
+                                    width="100%" alt="">
+                                <div class="ready-made-item__text-block">
+                                    <p class="ready-mate-text-block__title">Фотоаппарат Зенит</p>
+                                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный
+                                        повседневный образ для ребенка</p>
+                                    <div class="item__drop-cost"><a>2400 руб/сут</a><img
+                                            src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye"></div>
+                                </div>
+                                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+                            </div>
+                            <div class="ready-made-container__item"><img src="../img/user-cat-prod-photo.png"
+                                    width="100%" alt="">
+                                <div class="ready-made-item__text-block">
+                                    <p class="ready-mate-text-block__title">Фотоаппарат Зенит</p>
+                                    <p class="ready-mate-text-block__descr crowded-ellipsis--modify">Солнечный
+                                        повседневный образ для ребенка</p>
+                                    <div class="item__drop-cost"><a>2400 руб/сут</a><img
+                                            src="../icons/drop-eye-icon.svg" alt="" class="item__drop-eye"></div>
+                                </div>
+                                <div class="fav-heart-choose"><img class="change-on-choose-heart" src="../icons/lighting-heart-unchoose.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </setion>
+                </section>
+                <div class="second-stage__btns-container" id='btn-rent'> <!--ДЛЯ ГЛАВНОГО ЭКРАНА КНОПКИ-->
+                    <a href="" class="next-stage-btn">
+                        <div class='add-prod__next-stage-btn main-display--modify'>Арендовать все вещи</div>
+                    </a>
+                </div>
+                <div class="second-stage__btns-container disabled" id='btn-rent'> <!--ДЛЯ АДМИНКИ КНОПКИ--> <!--УДАЛИ DISABLED-->
+                    <a href="" class="next-stage-btn">
+                        <div class='add-prod__next-stage-btn'>Опубликовать</div>
+                    </a>
+                    <a class="next-stage-btn">
+                        <div class='add-prod__prev-stage-btn' id="cancel-reser">Редактировать</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="page__modal-filters">
+        <div class="win-prod__bg-container">
+            <div class="modal-win__product-wrapper">
+                <div class="card-prod__zoom-inner">
+                    <div class="test1"> 
+                        <img class="prod-favour-ico add-favorites-icon" id='favourIcoClick' src="../icons/prod-favour-ico.svg" alt="">
+                    </div>
+                    <div class="for-btns__container">
+                        <div class="photo-prod--slick-slide-container">
+                            <img src="../img/modal-cat-prod-inner-photo.png" alt="" class="card-prod-photo--slick">
+                            <img src="../img/modal-cat-prod-inner-photo.png" alt="" class="card-prod-photo--slick">
+                            <img src="../img/modal-cat-prod-inner-photo.png" alt="" class="card-prod-photo--slick">
+                        </div>
+                    </div>  
+                    <div class="zoom-prod__text-wrapper">
+                        <div class="title-block-with-star">
+                            <h1 class="zoom-prod__title">Платье Роза</h1>
+                            <div class="rate-star Stars" style="--rating: 69.5;" aria-label="Rating of this product is % out of 100"></div>
+                        </div>
+                        <div class="spec-info__wrapper">
+                            <div class="sp-info_col spec-info__ft-col">
+                                <p class="spec-info__par">Материал<span class="spec-info__link">Металл, Стекло</span></p>
+                                <p class="spec-info__par">Цвет<span class="spec-info__link">Черный</span></p>
+                                <p class="spec-info__par">Узор<span class="spec-info__link">Клетка</span></p>
+                                <p class="spec-info__par">Размер<span class="spec-info__link">XXL</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                                <p class="spec-info__par">Длина<span class="spec-info__link">192 см</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                            </div>
+                            <div class="sp-info_col spec-info__sc-col">
+                                <p class="spec-info__par">Материал<span class="spec-info__link">Металл, Стекло</span></p>
+                                <p class="spec-info__par">Цвет<span class="spec-info__link">Черный</span></p>
+                                <p class="spec-info__par">Узор<span class="spec-info__link">Клетка</span></p>
+                                <p class="spec-info__par">Размер<span class="spec-info__link">XXL</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                                <p class="spec-info__par">Длина<span class="spec-info__link">192 см</span></p>
+                                <p class="spec-info__par">Детали<span class="spec-info__link">Шипы</span></p>
+                            </div>
+                        </div>
+                        <div class="arend-cost__info-wrapper">
+                            <p class="arend-cost__text">Аренда на 3 суток - 8 000 ₽</p>
+                            <p class="arend-cost__text">Аренда на 7 суток - 18 000 ₽</p>
+                            <p class="arend-cost__main-text">2400 ₽ / сут</p>
+                        </div>
+                        <div class="system-notice__card-btns">
+                            <a href='#'><div class="system-card__first-btn">В корзину</div></a>
+                            <a href='#'><div class="system-card__second-btn">Забронировать</div></a>
+                        </div>
+                    </div>
+                </div>
+                <img class="modal__close-ico" src="../icons/photo-modal-close-icon.svg" alt="">
+            </div>          
+        </div>
+    </section>
+    <footer class="footer aut__footer">
+        <div class="container">
+            <div class="footer__electio-info">
+                <a class="electio-info__link" href=""> Правила пользования сайтом</a>
+                <a class="electio-info__link footer-info__doc" href=""> Документация</a>
+                <a class="electio-info__link footer-info__faq" href=""> FAQ</a>
+                <a class="electio-info__link link-author" href=""> © Electio 2020</a>
+            </div>
+            <div class="footer__electio-contacts">
+                <div class="footer__social-btn-cont">
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__tw" href="#">Чат с администрацией</a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__be" href="#"></a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__inst" href="#"></a>
+                </div>
+                <div class="footer__another-cont">
+                    <a class="electio-info__link" href="#">something@gmail.com</a>
+                    <a class="electio-info__link" href="#">+8 (812) 123-45-67</a>
+                    <a class="electio-info__link link-city" href="#">Россия</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="../js/slick.min.js"></script>
+    <script type='text/javascript' src='../js/libs/scroll-header.js'></script>
+    <script type='text/javascript' src='../js/libs/grid.js'></script>
+    <script type ='text/javascript' src='../js/libs/product-p-script.js'></script>
+    <script type='text/javascript' src='../js/libs/article.js'></script>
+</body>
+</html>

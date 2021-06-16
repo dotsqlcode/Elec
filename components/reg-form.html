@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link href ="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800;900&family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href = '../css/libs/normalize.css' rel = 'stylesheet' type = 'text/css'> 
+    <link href = '../css/style.min.css' rel = 'stylesheet' type = 'text/css'>
+    <link href="../css/wide-head-and-foot-style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body class="register-page-body">
+    <header class="header error-header">
+        <div class="header__logo">
+            <a class="logo__link" href="/"><img src='../icons/header__logo-dark.svg' alt='logo'></a>
+        </div>
+    </header>
+    <section class="center-container">
+        <div class="register-wrapper">
+            <form action="" method="POST" class="form__register" id='reg-form'>
+                <p class='form-register__title'> Регистрация </p>
+                <div class="register__soc-btns-container--under375"> <!-- Чтобы в активность привести одну из кнопок удали класс btn--inactive с нее -->
+                    <span class="every-reg-soc-btn__style s-r-b__vk--under375"></span>
+                    <span class="every-reg-soc-btn__style s-r-b__gmail--under375"></span>
+                    <span class="every-reg-soc-btn__style s-r-b__facebook--under375"></span>
+                    <span class="every-reg-soc-btn__style s-r-b__gmail2--under375"></span>
+                </div>
+                <p class='form-register__descr description'> Введите логин (почта)</p>
+                <input 
+                type="email" 
+                class="register__input-login"
+                placeholder="Введите логин"
+                id="reg__login"
+                required
+                >
+                <p class='form-register__descr description'> Введите имя</p>
+                <input 
+                type="text" 
+                class="register__input-login"
+                placeholder="Введите имя"
+                id="reg__fname"
+                required
+                >
+                <p class='form-register__descr description'> Введите фамилию</p>
+                <input 
+                type="text" 
+                class="register__input-login"
+                placeholder="Введите фамилию"
+                id="reg__lname"
+                required
+                >
+                <p class='form-register__descr description'> Введите пароль</p>
+                <input 
+                class="register__input-pass"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Введите пароль"
+                id="reg__password"
+                required
+                >
+                <p class='form-register__descr description'> Повторите пароль </p>
+                <input 
+                class="register__input-pass-accept"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Повторите пароль"
+                id="reg__password2"
+                required
+                >
+                <p class='form-register__descr description descrp-regquestion'> Есть аккаунт?
+                    <a class="register__auth-link" href=" auth-form.html"> Войти </a>
+                </p>
+                <a href='#'><input type="submit" class="btn register-btn" value="Зарегистрироваться"></a>
+                <p class='form-register__descr description descr-fastreg'> Быстрая регистрация </p>
+            </form>
+            <div class="register__social-btn">
+                <a class='register__social-btn-bg-circle social-btn__vk' href='#'><img src='../icons/reg_page_vkicon.svg' alt='icon'></a>
+                <a class='register__social-btn-bg-circle social-btn__gmail-first' href='#'><img src='../icons/reg_page_gmailicon.svg' alt='icon'></a>
+                <a class='register__social-btn-bg-circle social-btn__facebook' href='#'></a>
+                <a class='register__social-btn-bg-circle social-btn__gmail-second' href='#'><img src='../icons/reg_page_gmailicon2.svg' alt='icon'></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.js"></script>
+    <script type = 'text/javascript' src="../js/state.js"></script>
+    <!-- <script type = 'text/javascript' src='../js/libs/main.js'></script> -->
+    <script type = 'text/javascript' src='../js/libs/scroll-header.js'></script>
+</body>
+</html>

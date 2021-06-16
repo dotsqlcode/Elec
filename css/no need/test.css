@@ -1,0 +1,23 @@
+#test {
+    margin-top: 150px;
+    margin-left: 150px;
+    outline: none;
+}
+.select-test {
+    color: red;
+}
+.on-option-block {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.on-option-block label {
+    min-height: 35px;
+    min-width: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 15px;
+    background-color: yellowgreen;
+}
+.check1l {
+    color: white;
+}

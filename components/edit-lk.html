@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit profile</title>
+    <link href ="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800;900&family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link href = "../css/libs/normalize.css" rel = "stylesheet" type = "text/css"> 
+    <link href = "../css/edit-lk.min.css" rel = "stylesheet" type = "text/css">
+    <link href = "../css/wide-head-and-foot-style.min.css" rel = "stylesheet" type = "text/css">
+    <link href="../css/radio-check-styles.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>  
+    <header>
+        <div class="header header-width-nav"> <!-- ЧТОБЫ ВКЛЮЧИЛАСЬ ШАПКА НЕАВТОРИЗОВАННОГО ПОЛЬЗОВАТЕЛЯ ДОБАВИТЬ КЛАСС header-unlogin -->
+            <div class="header__logo">
+                <a class="logo__link" href="/"><img src="../icons/header__logo--light.svg" alt="logo"></a>
+            </div>
+            <div class="header__position-user">
+                <div class="header__city-block-trig-link">
+                    <p class="trigger-city">Санкт-Петербург</p>
+                </div>
+                <div class="header__city-block-trig-list">
+                    <div class="city-list__container">
+                        <div class="city-list__container-inner">
+                            <div class="city-list__wrapper">
+                                <p class="city-of-list">Санкт-Петербург</p>
+                                <p class="city-of-list">Казань</p>
+                                <p class="city-of-list">Краснодар</p>
+                                <p class="city-of-list">Мурманск</p>
+                                <p class="city-of-list">Владивосток</p>
+                                <p class="city-of-list">Сочи</p>
+                                <p class="city-of-list">Самара</p>
+                                <p class="city-of-list">Омск</p>
+                                <p class="city-of-list">Новосибирск</p>
+                                <p class="city-of-list">Челябинск</p>
+                                <p class="city-of-list">Рязань</p>
+                                <p class="city-of-list">Смоленск</p>
+                                <p class="city-of-list">Тула</p>
+                                <p class="city-of-list">Ярославль</p>
+                                <p class="city-of-list">Воронеж</p>
+                                <p class="city-of-list">Саратов</p>
+                                <p class="city-of-list">Архангельск</p>
+                                <p class="city-of-list">Калининград</p>
+                                <p class="city-of-list">Чебоксары</p>
+                                <p class="city-of-list">Уфа</p>
+                                <p class="city-of-list">Чебаркуль</p>
+                                <p class="city-of-list">Екатеринбург</p>
+                                <p class="city-of-list">Пенза</p>
+                            </div>
+                            <div class="decor-op-block op-block-top"></div>
+                            <div class="decor-op-block op-block-down"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__container">
+                <nav class="menu">
+                    <ul class="wrapper__link">
+                        <li>
+                            <a href="catalog.html" class="header-menu__link menu__link-catalog">Каталог
+                                <div class="hover-cat-menu__container">
+                                    <div class="hover-cat-menu__container-inner">
+                                        <div class="hover-cat-menu__grid-cont">
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-ft-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Одежда</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Верхняя одежда</li>
+                                                        <li class="prod-categ-link">Блузы, рубашки и водолазки</li>
+                                                        <li class="prod-categ-link">Боди, Купальники и пляжная одежда</li>
+                                                        <li class="prod-categ-link">Джемперы, вязанные вещи и кардиган</li>
+                                                        <li class="prod-categ-link">Джинсы и Брюки</li>
+                                                        <li class="prod-categ-link">Домашняя одежда</li>
+                                                        <li class="prod-categ-link">Комбинезоны, Пиджаки и костюмы</li>
+                                                        <li class="prod-categ-link">Платья и сарафаны</li>
+                                                        <li class="prod-categ-link">Спорт, Футболки и поло</li>
+                                                        <li class="prod-categ-link">Толстовки/свитноты, Топы и майки</li>
+                                                        <li class="prod-categ-link">Шорты и Юбки</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Реквизиты</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Реквизиты</li>
+                                                        <li class="prod-categ-link">Оружие</li>
+                                                        <li class="prod-categ-link">Машины</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-sc-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Аксессуары</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Аксессуары для волос, парики</li>
+                                                        <li class="prod-categ-link">Головные уборы</li>
+                                                        <li class="prod-categ-link">Зонты</li>
+                                                        <li class="prod-categ-link">Косметические наборы</li>
+                                                        <li class="prod-categ-link">Очки</li>
+                                                        <li class="prod-categ-link">Перчатки и вырежки</li>
+                                                        <li class="prod-categ-link">Платки, шарфы, Ремни и Пояса</li>
+                                                        <li class="prod-categ-link">Ремни и пояса</li>
+                                                        <li class="prod-categ-link">Рюкзаки, Сумки и Чемоданы</li>
+                                                        <li class="prod-categ-link">Украшения и Часы</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Атрибутика образа</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Значки и жетоны</li>
+                                                        <li class="prod-categ-link">Нашивки</li>
+                                                        <li class="prod-categ-link">Маски</li>
+                                                        <li class="prod-categ-link">Крылья</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-th-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Обувь</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Боссоножки, Сандали и Эспадрильи</li>
+                                                        <li class="prod-categ-link">Ботильоны</li>
+                                                        <li class="prod-categ-link">Ботинки, Сапоги и Резиновая обувь</li>
+                                                        <li class="prod-categ-link">Вечерняя обувь</li>
+                                                        <li class="prod-categ-link">Домашняя обувь</li>
+                                                        <li class="prod-categ-link">Казаки и мюли</li>
+                                                        <li class="prod-categ-link">Кроссовки/кеды, Мокасины и топсайдер</li>
+                                                        <li class="prod-categ-link">Туфли</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Спец. одежда и костюмы</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Военная форма</li>
+                                                        <li class="prod-categ-link">Экипировка медицинских работников</li>
+                                                        <li class="prod-categ-link">Полиция и Росгвардия</li>
+                                                        <li class="prod-categ-link">Форма пожарного</li>
+                                                        <li class="prod-categ-link">Сценические костюмы</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="about-electio.html" class="header-menu__link about-service-btn">О сервисе</a></li>
+                        <li class="hid-for-unlogin-header"><a href="#" class="header-menu__link">Мои объявления</a></li>
+                        <li class="hid-for-unlogin-header"><a href="lk.html" class="header-menu__link menu__link-pc">Личный кабинет</a></li>
+                        <li class="unlog-header-btn"><a href="reg-form.html" class="header-menu__link hidden-btn registration-btn">Регистрация</a></li>
+                        <li class="unlog-header-btn"><a href="auth-form.html" class="header-menu__link hidden-btn authtariz-btn">Войти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-btn__sh-ch">
+                    <a class="header__link-shop" href="#">
+                        <p class="sum-circle shop-icon__sum-circle">2</p>
+                    </a>
+                    <a class="header__link-chat" href="#">
+                        <p class="sum-circle chat-icon__sum-circle">3</p>
+                    </a>
+                </div>
+                <div class="header-serch__input-block">
+                    <input class='header-ser__input' type="text" focus:{ outline: none; } placeholder='Поиск'>
+                    <img src="../icons/search-head-input-ico.svg" alt="" class="search-header-input-ico">
+                    <img src="../icons/light-explore-ico-under375.svg" alt="" class="search-header-input-ico light-under375">
+                </div>
+                <div class="burger-block">
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="burger-drop-menu__container">
+        <div class="burger-drop-menu__container-inner">
+            <div class="burger-dr-m__wrapper">
+                <div class="block-logo-city__under375">
+                    <img src="../icons/dark-logo-dm-375.svg" alt="" class="logo-ico__under375">
+                </div>
+                <div class="photo-ico-plus-name-block">
+                    <div class="burger-photo-place">
+                        <a href="lk.html"><img class="burger-photo-ico" src="../icons/burger-photo-place-ico.svg" alt=""></a>
+                    </div>
+                    <div class="burger-name-place-block">
+                        <a href="lk.html"><span class="burger-name-text">Никки Розенфельд</span></a>
+                    </div>
+                </div>
+                <ul class="navigation-menu-wrapper">
+                    <li class="burger-tab-el"><a href="catalog.html" class="burger-link-el">Каталог</a></li>
+                    <li class="burger-tab-el"><a href="lk.html" class="burger-link-el">Личный кабинет</a></li>
+                    <li class="burger-tab-el"><a href="" class="burger-link-el">Мои обращения</a></li>
+                    <li class="burger-tab-el"><a href="about-electio.html" class="burger-link-el">О сервисе</a></li>
+                    <li class="burger-tab-el"><a class="burger-link-el choose-cities">Санкт-Петербург</a>
+                        <div class="header__city-block-trig-list">
+                            <div class="city-list__container">
+                                <div class="city-list__container-inner">
+                                    <div class="city-list__wrapper">
+                                        <p class="city-of-list">Санкт-Петербург</p>
+                                        <p class="city-of-list">Казань</p>
+                                        <p class="city-of-list">Краснодар</p>
+                                        <p class="city-of-list">Мурманск</p>
+                                        <p class="city-of-list">Владивосток</p>
+                                        <p class="city-of-list">Сочи</p>
+                                        <p class="city-of-list">Самара</p>
+                                        <p class="city-of-list">Омск</p>
+                                        <p class="city-of-list">Новосибирск</p>
+                                        <p class="city-of-list">Челябинск</p>
+                                        <p class="city-of-list">Рязань</p>
+                                        <p class="city-of-list">Смоленск</p>
+                                        <p class="city-of-list">Тула</p>
+                                        <p class="city-of-list">Ярославль</p>
+                                        <p class="city-of-list">Воронеж</p>
+                                        <p class="city-of-list">Саратов</p>
+                                        <p class="city-of-list">Архангельск</p>
+                                        <p class="city-of-list">Калининград</p>
+                                        <p class="city-of-list">Чебоксары</p>
+                                        <p class="city-of-list">Уфа</p>
+                                        <p class="city-of-list">Чебаркуль</p>
+                                        <p class="city-of-list">Екатеринбург</p>
+                                        <p class="city-of-list">Пенза</p>
+                                    </div>
+                                    <div class="decor-op-block op-block-top"></div>
+                                    <div class="decor-op-block op-block-down"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="burger-tab-el burger-exit-link"><a href="" class="burger-link-el">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="closer-window-area"></div>
+    <section class='photo-name-display'>
+        <h1 class="edit-prof__title"> Редактировать профиль </h1>
+        <p class="edit-prof__main-info">Основная информация </p>
+        <p class="go-back-link"><a href="lk.html">Назад</a></p>
+        <div class="photo-name-container">
+            <form method="GET" action="" class="profile-photo">
+                <img src="../img/photo-profile--female.png" class="profile-photo--change-size" alt="" id='photo-standard-fm'>
+                <img src="../img/photo-profile--male.png" class="profile-photo--change-size" alt="" id='photo-standard-m'>
+                <img src="../img/profile-foto.png" class="profile-photo--change-size" alt="">
+                <div class='photo__modal-edit-photo'>
+                    <div>
+                        <div class="input__warpper">
+                            <label for="input__file" class="input__file-button">
+                            <input type="file" name="input__file" id="input__file" class="input input__file">
+                                <div class="btn-edit-photo  btn-load">Загрузить фото</div> <!-- Можно поменять на span-->
+                            </label>
+                        </div>
+                    </div>
+                    <div> <!-- Если в итоге не нужна, удали или закомменть-->
+                        <div class="input__warpper">
+                            <!-- <input type="file" name="input__file-delete" id="input__file-delete" class="input input__file" multiple> -->
+                            <div for="input__file-delete" class="input__file-button">
+                                <button type="submit" class="btn-edit-photo  btn-delete">Установить</button> <!-- Можно поменять на span-->
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input__warpper">
+                            <label for="file" class="input__file-button">
+                            <input type="file" name="file" id="file" class="input input__file">
+                                <div class="btn-edit-photo  btn-delete"  id="alone-load">Выбрать фото</div> <!-- Можно поменять на span-->
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit-photo__btns-container--under375">
+                    <span class="edit-photo__style ed-ph-del"></span>
+                    <span class="edit-photo__style ed-ph-loa"></span>
+                    <span class="edit-photo__style ed-ph-sucadd ed-ph-inactive"></span> <!-- Удали класс  ed-ph-inactive Когда 
+                        подтверждена загрудка фотки, чтобы включить кнопку подтверждения 
+                        установки фотографии-->
+                </div>
+            </form>
+            <form method="POST" action="" class="info-block-plus-btn__container">
+                <div class="info-block">
+                    <h3 class="input-name__title">Имя*</h3>
+                    <div class="input__wrapper">
+                        <input 
+                        class='name-profile__input' 
+                        type="text" autofocus focus:{ outline: none; } 
+                        placeholder='Введите имя' 
+                        required>
+                        <img class="accept-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+                    </div>
+                    <h3 class="input-name__title">Фамилия*</h3>
+                    <div class="input__wrapper">
+                        <input 
+                        class='name-profile__input' 
+                        type="text" focus:{ outline: none; } 
+                        placeholder='Введите фамилию' 
+                        required>
+                        <img class="accept-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+                    </div>
+                    <h3 id="gender" class="input-name__title">Пол</h3>
+                    <div class="input__wrapper selecter__wrapper">
+                        <select class='select__new-style write-place--fill' placeholder='' type="text" required readonly>
+                            <option id="" class="sel__placehold" value="" style="color: #bfbfc8 !important;" selected disabled>Пол</option>
+                            <option class="sel-opt__new" value="value1">Мужской</option> 
+                            <option class="sel-opt__new" value="value1">Женский</option> 
+                            <option class="sel-opt__new" value="value1">Другое</option>
+                        </select>
+                        <img class="select-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+                    </div>
+                    <div class="input__wrapper wrapper-textarea rules-back__wrapper">
+                        <h3 class="input-name__title amount-of-penalties-title">О себе</h3>
+                        <h3 class="input-name__title sub-text">Не более 150 символов</h3>
+                        <div>
+                            <textarea id='rules-back__textarea' class="write-place--fill" placeholder="Расскажите немного о себе" maxlength="150"></textarea> 
+                            <img class="select-input-ico"  src="../icons/form--unfilled-ico.svg" alt="">
+                        </div>
+                        <h3 class="input-name__title sub-text under-area__text">Пожалуйста, заполняйте данные корректно во избежание проблем с заключением договоров и идентификации Вас другими пользователями.</h3>
+                    </div>
+                </div>
+                <div class="for-time-test-div">
+                    <div class="company-and-contacts">
+                        <p class="edit-prof__main-info">Моя компания </p>
+                        <h3 class="input-name__title under1000int">Название компании</h3>
+                        <div class="company">
+                            <label class='checkbox__wrapper'>
+                                <input type="checkbox" class="check-company" id='check-company'>
+                                <span class="check-style"></span>
+                                <p class="title-checkbox">Да, я представитель юр. лица</p>
+                            </label>
+                            <h3 class="input-name__title">Название компании</h3>
+                            <div class="input__wrapper">
+                                <input class='name-profile__input company-name__input inactive-input' id='company-name' type="text" placeholder='Доступно только для юридических лиц' readonly/>
+                                <img class="select-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <div class="contacts__input-email">
+                                <p class="edit-prof__main-info"> Контакты </p>
+                                <h3 class="input-name__title">e-mail*</h3>
+                                <h3 class="input-name__title sub-text"> На почту будут приходить только важные уведомления. Никакого спама :) </h3>
+                                <div class="input__wrapper">
+                                    <input 
+                                    class='name-profile__input' 
+                                    type="text" focus:{ outline: none; } 
+                                    placeholder='Введите ваш e-mail' 
+                                    required>
+                                    <img class="accept-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="contacts__social-btn">
+                                <h3 class="input-name__title">Подключенные сервисы</h3>
+                                <h3 class="input-name__title sub-text"> Вы можете подлючить свои социальные сети, чтобы иметь быстрый доступ к аккаунту</h3>
+                                <div class="register__social-btn">
+                                    <a class='register__social-btn-bg-circle social-btn__vk' href='#'><img src='../icons/reg_page_vkicon.svg' class='soc-btn-ico-adap' alt='icon'></a>
+                                    <a class='register__social-btn-bg-circle social-btn__facebook' href='#'><img src="../icons/facebook.svg" class='soc-btn-ico-adap' alt=""></a>
+                                    <a class='register__social-btn-bg-circle social-btn__gmail-first soc-btn-disabled-class' href='#'><img src='../icons/reg_page_gmailicon.svg' class='soc-btn-ico-adap' alt='icon'></a>
+                                    <a class='register__social-btn-bg-circle social-btn__gmail-second' href='#'><img src='../icons/reg_page_gmailicon2.svg' class='soc-btn-ico-adap' alt='icon'></a>
+                                </div>
+                                <div class="register__soc-btns-container--under375"> <!-- Чтобы в активность привести одну из кнопок удали класс btn--inactive с нее -->
+                                    <span class="every-reg-soc-btn__style btn--inactive s-r-b__vk--under375"></span>
+                                    <span class="every-reg-soc-btn__style btn--inactive s-r-b__gmail--under375"></span>
+                                    <span class="every-reg-soc-btn__style s-r-b__facebook--under375"></span>
+                                    <span class="every-reg-soc-btn__style btn--inactive s-r-b__gmail2--under375"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <a><input type="button" class='allproject-standart-btn' value="Сохранить изменения"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- <section class="company-and-contacts">
+        <p class="edit-prof__main-info">Моя компания </p>
+        <label class='checkbox__wrapper'>
+            <input type="checkbox" class="" id='check-company'>
+            <span class="check-style"></span>
+            <p class="title-checkbox">Да, я представитель юр. лица</p>
+        </label>
+        <h3 class="input-name__title">Название компании</h3>
+        <div class="input__wrapper">
+            <input class='name-profile__input company-name__input inactive-input' id='company-name' type="text" placeholder='Доступно только для юридических лиц' readonly/>
+            <img class="select-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+        </div>
+        <div class="contacts">
+            <div class="contacts__input-email">
+                <p class="edit-prof__main-info"> Контакты </p>
+                <h3 class="input-name__title">e-mail*</h3>
+                <h3 class="input-name__title sub-text"> На почту будут приходить только важные уведомления. Никакого спама :) </h3>
+                <div class="input__wrapper">
+                    <input 
+                    class='name-profile__input' 
+                    type="text" autofocus focus:{ outline: none; } 
+                    placeholder='Введите ваш e-mail' 
+                    required>
+                    <img class="accept-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+                </div>
+            </div>
+            <div class="contacts__social-btn">
+                <h3 class="input-name__title">Подключенные сервисы</h3>
+                <h3 class="input-name__title sub-text"> Вы можете подлючить свои социальные сети, чтобы иметь быстрый доступ к аккаунту</h3>
+                <div class="register__social-btn">
+                    <a class='register__social-btn-bg-circle social-btn__vk' href='#'><img src='../icons/reg_page_vkicon.svg' class='soc-btn-ico-adap' alt='icon'></a>
+                    <a class='register__social-btn-bg-circle social-btn__facebook' href='#'><img src="../icons/facebook.svg" class='soc-btn-ico-adap' alt=""></a>
+                    <a class='register__social-btn-bg-circle social-btn__gmail-first soc-btn-disabled-class' href='#'><img src='../icons/reg_page_gmailicon.svg' class='soc-btn-ico-adap' alt='icon'></a>
+                    <a class='register__social-btn-bg-circle social-btn__gmail-second' href='#'><img src='../icons/reg_page_gmailicon2.svg' class='soc-btn-ico-adap' alt='icon'></a>
+                </div>
+            </div>
+        </div>
+        <a><input type="button" class='allproject-standart-btn' value="Сохранить изменения"></a>
+    </section> -->
+    <section class="change-password__display">
+        <div class="change-password__container">
+            <p class="edit-prof__main-info"> Сменить пароль </p>
+            <p class="change-password__descr"> Обратите внимание, что пароль должен состоять минимум из 8 символов и содержать одну заглавную букву, одну строчную букву и одну цифру. Все буквы латинского алфавита </p>
+            <div class="change-password__form-wrapper">
+                <div class="input__wrapper">
+                    <h3 class="input-name__title">Старый пароль</h3>
+                    <input class='name-profile__input' type="password" required>
+                </div>
+                <div class="input__wrapper password-input">
+                    <h3 class="input-name__title">Новый пароль</h3>
+                    <input id="PassNew" class='name-profile__input' type="password" required>
+                    <span class="password-error-msg new-password">Не соблюдены условия</span>
+                </div>
+                <div class="input__wrapper password-input">
+                    <h3 class="input-name__title">Повторите пароль</h3>
+                    <input id="PasNewRep" class='name-profile__input' type="password" required>
+                    <span class="password-error-msg replay-password">Не соблюдены условия</span>
+                </div>
+            </div>
+        </div>
+        <input type="button" class='allproject-standart-btn' value="Сменить пароль"></a>
+    </section>
+    <section class="display-verify-info">
+        <div class="ver-items__container">
+            <div class="ver-items__wrapper">
+                <div class="ver-item-loading__wrapper">
+                    <div class='ver-item__text-box'>
+                        <div class="verify-box__title">
+                            <p class="edit-prof__main-info"> Верификация </p>
+                            <img class="select-input-ico" src="../icons/form--unfilled-ico.svg" alt="">
+                        </div>
+                        <p class="text-block__descr">
+                            IDensic — это легкая платформа
+                            для проверки цифровой
+                            личности за 2-3 минуты.
+                            Позволяет сервисам избавиться
+                            от мошенничества и строить
+                            сообщество, основанное на
+                            доверии.
+                            Система быстро подключается и
+                            уже содержит инструменты для
+                             управления, логику движения
+                            пользователей, встроенную
+                            обработку сложных и
+                            пограничных кейсов. </p> 
+                    </div>
+                </div>
+                <a><button class='allproject-standart-btn off-btn' disabled> Пройти верификацию </button></a> <!-- отруби класс off-btn и атрибут disabled кнопке, когда подключат самсаб-->
+            </div>
+        </div>
+    </section>
+    <footer class="footer aut__footer">
+        <div class="container">
+            <div class="footer__electio-info">
+                <a class="electio-info__link" href=""> Правила пользования сайтом</a>
+                <a class="electio-info__link footer-info__doc" href=""> Документация</a>
+                <a class="electio-info__link footer-info__faq" href=""> FAQ</a>
+                <a class="electio-info__link link-author" href=""> © Electio 2020</a>
+            </div>
+            <div class="footer__electio-contacts">
+                <div class="footer__social-btn-cont">
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__tw" href="#">Чат с администрацией</a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__be" href="#"></a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__inst" href="#"></a>
+                </div>
+                <div class="footer__another-cont">
+                    <a class="electio-info__link" href="#">something@gmail.com</a>
+                    <a class="electio-info__link" href="#">+8 (812) 123-45-67</a>
+                    <a class="electio-info__link link-city" href="#">Россия</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='../js/jquery.formstyler.min.js'></script>
+    <script src='../js/libs/scroll-header.js'></script>
+    <script src='../js/libs/passwordscript.js'></script>
+    <script src='../js/libs/edit-lk.js'></script>
+    <script src='../js/libs/mark-script.js'></script>
+</body>
+</html>

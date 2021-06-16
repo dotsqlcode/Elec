@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailing</title>
+    <link href ="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;800;900&family=PT+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link href = "../css/libs/normalize.css" rel = "stylesheet" type = "text/css"> 
+    <link href = "../css/range-picker.min.css" rel = "stylesheet" type = "text/css">
+    <link href="../css/libs/daterangepicker.css" rel="stylesheet" type="text/css">
+    <link href = "../css/mailing.min.css" rel = "stylesheet" type = "text/css">
+    <link href = "../css/wide-head-and-foot-style.min.css" rel = "stylesheet" type = "text/css">
+    <link href = "../css/calendare-style.min.css" rel = "stylesheet" type = "text/css">
+    <link href = "../css/radio-check-styles.min.css" rel = "stylesheet" type = "text/css">
+</head>
+<body class="mailing-page">  
+    <header class='wide-header-chat adm-header'> <!-- добавь класс adm-header, когда включен режим администратора -->
+        <div class="header header-width-nav">
+            <div class="header__logo">
+                <a class="logo__link" href="/"><img src="../icons/header__logo--light.svg" alt="logo"></a>
+            </div>
+            <div class="header__position-user">
+                <div class="header__city-block-trig-link">
+                    <p class="trigger-city">Санкт-Петербург</p>
+                </div>
+                <div class="header__city-block-trig-list">
+                    <div class="city-list__container">
+                        <div class="city-list__container-inner">
+                            <div class="city-list__wrapper">
+                                <p class="city-of-list">Санкт-Петербург</p>
+                                <p class="city-of-list">Казань</p>
+                                <p class="city-of-list">Краснодар</p>
+                                <p class="city-of-list">Мурманск</p>
+                                <p class="city-of-list">Владивосток</p>
+                                <p class="city-of-list">Сочи</p>
+                                <p class="city-of-list">Самара</p>
+                                <p class="city-of-list">Омск</p>
+                                <p class="city-of-list">Новосибирск</p>
+                                <p class="city-of-list">Челябинск</p>
+                                <p class="city-of-list">Рязань</p>
+                                <p class="city-of-list">Смоленск</p>
+                                <p class="city-of-list">Тула</p>
+                                <p class="city-of-list">Ярославль</p>
+                                <p class="city-of-list">Воронеж</p>
+                                <p class="city-of-list">Саратов</p>
+                                <p class="city-of-list">Архангельск</p>
+                                <p class="city-of-list">Калининград</p>
+                                <p class="city-of-list">Чебоксары</p>
+                                <p class="city-of-list">Уфа</p>
+                                <p class="city-of-list">Чебаркуль</p>
+                                <p class="city-of-list">Екатеринбург</p>
+                                <p class="city-of-list">Пенза</p>
+                            </div>
+                            <div class="decor-op-block op-block-top"></div>
+                            <div class="decor-op-block op-block-down"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__container">
+                <nav class="menu">
+                    <ul class="wrapper__link">
+                        <li>
+                            <a href="catalog.html" class="header-menu__link menu__link-catalog">Каталог
+                                <div class="hover-cat-menu__container">
+                                    <div class="hover-cat-menu__container-inner">
+                                        <div class="hover-cat-menu__grid-cont">
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-ft-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Одежда</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Верхняя одежда</li>
+                                                        <li class="prod-categ-link">Блузы, рубашки и водолазки</li>
+                                                        <li class="prod-categ-link">Боди, Купальники и пляжная одежда</li>
+                                                        <li class="prod-categ-link">Джемперы, вязанные вещи и кардиган</li>
+                                                        <li class="prod-categ-link">Джинсы и Брюки</li>
+                                                        <li class="prod-categ-link">Домашняя одежда</li>
+                                                        <li class="prod-categ-link">Комбинезоны, Пиджаки и костюмы</li>
+                                                        <li class="prod-categ-link">Платья и сарафаны</li>
+                                                        <li class="prod-categ-link">Спорт, Футболки и поло</li>
+                                                        <li class="prod-categ-link">Толстовки/свитноты, Топы и майки</li>
+                                                        <li class="prod-categ-link">Шорты и Юбки</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Реквизиты</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Реквизиты</li>
+                                                        <li class="prod-categ-link">Оружие</li>
+                                                        <li class="prod-categ-link">Машины</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-sc-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Аксессуары</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Аксессуары для волос, парики</li>
+                                                        <li class="prod-categ-link">Головные уборы</li>
+                                                        <li class="prod-categ-link">Зонты</li>
+                                                        <li class="prod-categ-link">Косметические наборы</li>
+                                                        <li class="prod-categ-link">Очки</li>
+                                                        <li class="prod-categ-link">Перчатки и вырежки</li>
+                                                        <li class="prod-categ-link">Платки, шарфы, Ремни и Пояса</li>
+                                                        <li class="prod-categ-link">Ремни и пояса</li>
+                                                        <li class="prod-categ-link">Рюкзаки, Сумки и Чемоданы</li>
+                                                        <li class="prod-categ-link">Украшения и Часы</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Атрибутика образа</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Значки и жетоны</li>
+                                                        <li class="prod-categ-link">Нашивки</li>
+                                                        <li class="prod-categ-link">Маски</li>
+                                                        <li class="prod-categ-link">Крылья</li>
+                                                        <li class="prod-categ-link">Прочее</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="hover-cat-menu__grid-col hover-cat-menu__grid-th-col">
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Обувь</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Боссоножки, Сандали и Эспадрильи</li>
+                                                        <li class="prod-categ-link">Ботильоны</li>
+                                                        <li class="prod-categ-link">Ботинки, Сапоги и Резиновая обувь</li>
+                                                        <li class="prod-categ-link">Вечерняя обувь</li>
+                                                        <li class="prod-categ-link">Домашняя обувь</li>
+                                                        <li class="prod-categ-link">Казаки и мюли</li>
+                                                        <li class="prod-categ-link">Кроссовки/кеды, Мокасины и топсайдер</li>
+                                                        <li class="prod-categ-link">Туфли</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prod-categ-wrapper">
+                                                    <p class="product-categ-title">Спец. одежда и костюмы</p>
+                                                    <ul class="prod-categ-links-cont">
+                                                        <li class="prod-categ-link">Военная форма</li>
+                                                        <li class="prod-categ-link">Экипировка медицинских работников</li>
+                                                        <li class="prod-categ-link">Полиция и Росгвардия</li>
+                                                        <li class="prod-categ-link">Форма пожарного</li>
+                                                        <li class="prod-categ-link">Сценические костюмы</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="about-electio.html" class="header-menu__link">О сервисе</a></li>
+                        <li class="usually-user-link"><a href="my-adds.html" class="header-menu__link">Мои объявления</a></li>
+                        <li class="adm-link"><a href="users.html" class="header-menu__link">Кабинет администратора</a></li>
+                        <li><a href="lk.html" class="header-menu__link menu__link-pc">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="header-btn__sh-ch">
+                    <a class="header__link-shop" href="#">
+                        <p class="sum-circle shop-icon__sum-circle">2</p>
+                    </a>
+                    <a class="header__link-chat" href="#">
+                        <p class="sum-circle chat-icon__sum-circle">3</p>
+                    </a>
+                </div>
+                <div class="header-serch__input-block">
+                    <input class='header-ser__input' type="text" focus:{ outline: none; } placeholder='Поиск'>
+                    <img src="../icons/search-head-input-ico.svg" alt="" class="search-header-input-ico">
+                </div>
+                <div class="burger-block">
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                    <span class="burger-link"></span>
+                </div>
+            </div>
+        </div>
+        <div class="wide-header__nav-container">
+            <nav class="wide-header__nav">
+                <ul class='wide-header__nav-list center-pos'> <!--АДМИНСКАЯ ПАНЕЛЬ -->
+                    <li class="usually-user-link"><a href="lk.html" class="wide-header__nav-link">Мой профиль</a></li>
+                    <li class="usually-user-link"><a href="add-prod.html" class="wide-header__nav-link">Добавить товар</a></li>
+                    <li class="usually-user-link"><a href="my-rent.html" class="wide-header__nav-link">Мои аренды</a></li>
+                    <li class="usually-user-link"><a href="my-adds.html" class="wide-header__nav-link">Мои объявления</a></li>
+                    <li class="usually-user-link"><a href="favorites.html" class="wide-header__nav-link">Избранное</a></li>
+                    <li class="usually-user-link"><a href="reserved.html" class="wide-header__nav-link">Бронь</a></li>
+                    <li class="usually-user-link"><a href="shop-cart.html" class="wide-header__nav-link">Корзина</a></li>
+                    <li class="usually-user-link"><a href="subscriptions.html" class="wide-header__nav-link">Подписки</a></li>
+                    <li class="adm-link"><a href="chat-page.html" class="wide-header__nav-link">Сообщения</a></li>
+                    <li class="adm-link"><a href="search-dialogs.html" class="wide-header__nav-link">Поиск диалогов</a></li>
+                    <li class="adm-link"><a href="mailing.html" class="wide-header__nav-link">Рассылка</a></li>
+                    <li class="adm-link"><a href="article-form.html" class="wide-header__nav-link">Добавление статьи</a></li>
+                    <li class="adm-link"><a href="cat-add-filt.html" class="wide-header__nav-link">Добавление фильтра</a></li>
+                    <li class="adm-link"><a href="service-anal.html" class="wide-header__nav-link">Аналитика по сайту</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="burger-drop-menu__container">
+        <div class="burger-drop-menu__container-inner">
+            <div class="burger-dr-m__wrapper">
+                <div class="photo-ico-plus-name-block">
+                    <div class="burger-photo-place">
+                        <a href="lk.html"><img class="burger-photo-ico" src="../img/profile-foto.png" alt=""></a>
+                    </div>
+                    <div class="burger-name-place-block">
+                        <a href="lk.html"><span class="burger-name-text">Никки Розенфельд</span></a>
+                    </div>
+                </div>
+                <ul class="navigation-menu-wrapper">
+                    <li class="burger-tab-el"><a href="catalog.html" class="burger-link-el">Каталог</a></li>
+                    <li class="burger-tab-el"><a href="lk.html" class="burger-link-el">Личный кабинет</a></li>
+                    <li class="burger-tab-el"><a href="" class="burger-link-el">Мои обращения</a></li>
+                    <li class="burger-tab-el"><a href="about-electio.html" class="burger-link-el">О сервисе</a></li>
+                    <li class="burger-tab-el"><a class="burger-link-el choose-cities">Санкт-Петербург</a>
+                        <div class="header__city-block-trig-list">
+                            <div class="city-list__container">
+                                <div class="city-list__container-inner">
+                                    <div class="city-list__wrapper">
+                                        <p class="city-of-list">Санкт-Петербург</p>
+                                        <p class="city-of-list">Казань</p>
+                                        <p class="city-of-list">Краснодар</p>
+                                        <p class="city-of-list">Мурманск</p>
+                                        <p class="city-of-list">Владивосток</p>
+                                        <p class="city-of-list">Сочи</p>
+                                        <p class="city-of-list">Самара</p>
+                                        <p class="city-of-list">Омск</p>
+                                        <p class="city-of-list">Новосибирск</p>
+                                        <p class="city-of-list">Челябинск</p>
+                                        <p class="city-of-list">Рязань</p>
+                                        <p class="city-of-list">Смоленск</p>
+                                        <p class="city-of-list">Тула</p>
+                                        <p class="city-of-list">Ярославль</p>
+                                        <p class="city-of-list">Воронеж</p>
+                                        <p class="city-of-list">Саратов</p>
+                                        <p class="city-of-list">Архангельск</p>
+                                        <p class="city-of-list">Калининград</p>
+                                        <p class="city-of-list">Чебоксары</p>
+                                        <p class="city-of-list">Уфа</p>
+                                        <p class="city-of-list">Чебаркуль</p>
+                                        <p class="city-of-list">Екатеринбург</p>
+                                        <p class="city-of-list">Пенза</p>
+                                    </div>
+                                    <div class="decor-op-block op-block-top"></div>
+                                    <div class="decor-op-block op-block-down"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="burger-tab-el burger-exit-link"><a href="" class="burger-link-el">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="display-under1000-navigation">
+        <div class="nav-under1000__container">
+            <div class="nav-under1000__container-inner">
+                <ul class="nav-under1000__wrapper adm-head-under1000">
+                    <li class="nav-under1000__btn-wrapper"><a class="nav-u1000__link">Сообщения</a></li>
+                    <li class="nav-under1000__btn-wrapper"><a href="search-dialogs.html" class="nav-u1000__link">Поиск диалогов</a></li>
+                    <li class="nav-under1000__btn-wrapper"><a href="mailing.html" class="nav-u1000__link">Рассылка</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="closer-window-area"></div>
+    <section class="empty-element"></section>
+    <section class="maling-display">
+        <form action="">
+            <div class="mailing__container">
+                <h1 class="main-page__title">Рассылка</h1>
+                <div class="mailing__inner">
+                    <h2 class="main__sub-title">Ее можно осуществить группе пользователей отобранной по определенным критериям </h2>
+                    <p class="info-ab-choosen-tab">Выберите вкладку</p>
+                    <div class="mailing-filter__grid filter-grid-before-first-click">
+                        <div class="mailing-filters__tabs">
+                            <ul class="tabs-menu">
+                                <li class="tabs-menu__link" value="0">Верификация</li>
+                                <li class="tabs-menu__link" value="1">Рейтинг</li>
+                                <li class="tabs-menu__link" value="2">Бан</li>
+                                <li class="tabs-menu__link" value="3">Дата регистрации</li>
+                                <li class="tabs-menu__link" value="4">Количество сделок</li>
+                                <li class="tabs-menu__link" value="5">Подписки</li>
+                                <li class="tabs-menu__link" value="6">Активность</li>
+                            </ul>
+                        </div>
+                        <div class="mailing-filters__container">
+                            <div class="mail-filter__wrapper disabled">
+                                <h3 class="mail-filter__title">Верификация</h3>
+                                <div class="mail-wrapper__inner">
+                                    <div class="container__filter-wrapper" id="">
+                                        <div class="filter-wrapper__header">
+                                            <img class='close-ico' src="../icons/close-ico.svg" alt="">
+                                        </div>
+                                        <div class="filter-wrapper__center-block">
+                                            <label class='radio__wrapper sort-name__list'>
+                                                <p class="title-radio sort-name-list__link">Только верифицированные</p>
+                                                <input name='rb-sort' type="radio" class="radio-btn" id=''>
+                                                <span class="radio-style"></span>
+                                            </label>
+                                            <label class='radio__wrapper sort-name__list'>
+                                                <p class="title-radio sort-name-list__link last">Только неверефицированные</p>
+                                                <input name='rb-sort' type="radio" class="radio-btn" id=''>
+                                                <span class="radio-style"></span>
+                                            </label>
+                                            <label class='radio__wrapper sort-name__list'>
+                                                <p class="title-radio sort-name-list__link last">Все пользователи</p>
+                                                <input name='rb-sort' type="radio" class="radio-btn" id=''>
+                                                <span class="radio-style"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mail-filter__wrapper disabled">
+                                <h3 class="mail-filter__title">Рейтинг</h3>
+                                <div class="mail-wrapper__inner">
+                                    <div class="container__filter-wrapper" id="">
+                                        <div class="filter-wrapper__header">
+                                            <img class='close-ico' src="../icons/close-ico.svg" alt="">
+                                        </div>
+                                        <div class="filter-wrapper__center-block">
+                                            <!-- УСТАНОВИТЬ ID LABEL'АМ -->
+                                            <div class="filter-wrapper__size-form">
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value=""><div class="rate-star Stars" style="--rating: 0;"
+                                                        aria-label="Rating of this product is % out of 100"></div></p>
+                                                    <p class="title-checkbox sort-name-list__link" value="">16</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value=""><div class="rate-star Stars" style="--rating: 20;"
+                                                        aria-label="Rating of this product is % out of 100"></div></p>
+                                                    <p class="title-checkbox sort-name-list__link" value="">8</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value=""><div class="rate-star Stars" style="--rating: 40;"
+                                                        aria-label="Rating of this product is % out of 100"></div></p>
+                                                    <p class="title-checkbox sort-name-list__link" value="">1</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value=""><div class="rate-star Stars" style="--rating: 60;"
+                                                        aria-label="Rating of this product is % out of 100"></div></p>
+                                                    <p class="title-checkbox sort-name-list__link" value="">133</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value=""><div class="rate-star Stars" style="--rating: 80;"
+                                                        aria-label="Rating of this product is % out of 100"></div></p>
+                                                    <p class="title-checkbox sort-name-list__link" value="">423</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value=""><div class="rate-star Stars" style="--rating: 100;"
+                                                        aria-label="Rating of this product is % out of 100"></div></p>
+                                                    <p class="title-checkbox sort-name-list__link last" value="">16</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mail-filter__wrapper disabled">
+                                <h3 class="mail-filter__title">Бан</h3>
+                                <div class="mail-wrapper__inner">
+                                    <div class="container__filter-wrapper" id="">
+                                        <div class="filter-wrapper__header">
+                                            <img class='close-ico' src="../icons/close-ico.svg" alt="">
+                                        </div>
+                                        <div class="filter-wrapper__center-block">
+                                            <label class='radio__wrapper sort-name__list'>
+                                                <p class="title-radio sort-name-list__link">Только забаненные</p>
+                                                <input name='rb-sort' type="radio" class="radio-btn" id=''>
+                                                <span class="radio-style"></span>
+                                            </label>
+                                            <label class='radio__wrapper sort-name__list'>
+                                                <p class="title-radio sort-name-list__link last">Только незабаненные</p>
+                                                <input name='rb-sort' type="radio" class="radio-btn" id=''>
+                                                <span class="radio-style"></span>
+                                            </label>
+                                            <label class='radio__wrapper sort-name__list'>
+                                                <p class="title-radio sort-name-list__link last">Все пользователи</p>
+                                                <input name='rb-sort' type="radio" class="radio-btn" id=''>
+                                                <span class="radio-style"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mail-filter__wrapper disabled">
+                                <h3 class="mail-filter__title">Дата регистрации</h3>
+                                <div class="mail-wrapper__inner">
+                                    <div class="container__filter-wrapper" id="">
+                                        <div class="filter-wrapper__header">
+                                            <img class='close-ico' src="../icons/close-ico.svg" alt="">
+                                        </div>
+                                        <div class="filter-wrapper__center-block">
+                                            <h3 class="mail-tab__select-title">Диапазон дат</h3>
+                                            <div id="register-date-ft" class="cover-datepicker">
+                                                <div class="input__wrapper selecter__wrapper">
+                                                    <div class="row rel--pos">
+                                                        <div id='calendare-ft-graf' class="col-4">
+                                                            <label></label>
+                                                            <input type="text" name="dates" class="form-control pull-right"/>
+                                                            <img class="calendare-arrow-drop" src="../icons/grey-drop-arrow-btn.svg" alt="">
+                                                            <script>
+                                                                $(function() {
+                                                                    $('input[name="dates"]').daterangepicker({ startDate: moment(), endDate: moment().add(2, 'day')});
+                                                                })
+                                                            </script>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <h3 class="mail-tab__select-title">Конец диапазона</h3>
+                                            <div id="register-date-sc" class="cover-datepicker">
+                                                <div class="input__wrapper selecter__wrapper">
+                                                    <div class="row rel--pos">
+                                                        <div id='calendare-ft-graf' class="col-4">
+                                                            <label></label>
+                                                            <input type="text" name="dates" class="form-control pull-right"/>
+                                                            <img class="calendare-arrow-drop" src="../icons/grey-drop-arrow-btn.svg" alt="">
+                                                            <script>
+                                                                $(function() {
+                                                                    $('input[name="dates"]').daterangepicker({ startDate: moment(), endDate: moment().add(2, 'day')});
+                                                                })
+                                                            </script>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mail-filter__wrapper disabled">
+                                <h3 class="mail-filter__title">Сделки</h3>
+                                <div class="mail-wrapper__inner">
+                                    <div class="container__filter-wrapper" id="">
+                                        <div class="filter-wrapper__header">
+                                            <img class='close-ico' src="../icons/close-ico.svg" alt="">
+                                        </div>
+                                        <div class="filter-wrapper__center-block">
+                                            <div class="polzunok-container-5">
+                                                <div class="range-inputs-block">
+                                                    <input type="text" class="polzunok-input-5-left">
+                                                    <input type="text" class="polzunok-input-5-right"></div>
+                                                    <div class="polzunok-5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mail-filter__wrapper disabled">
+                                <h3 class="mail-filter__title">Подписки</h3>
+                                <div class="mail-wrapper__inner">
+                                    <div class="container__filter-wrapper" id="">
+                                        <div class="filter-wrapper__header">
+                                            <img class='close-ico' src="../icons/close-ico.svg" alt="">
+                                        </div>
+                                        <div class="filter-wrapper__center-block">
+                                            <!-- УСТАНОВИТЬ ID LABEL'АМ -->
+                                            <div class="filter-wrapper__size-form">
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value="">Без подписки</p>
+                                                    <p class="title-checkbox sort-name-list__link" value="">423</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value="">Помощник</p>
+                                                    <p class="title-checkbox sort-name-list__link last" value="">16</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value="">Костюмер</p>
+                                                    <p class="title-checkbox sort-name-list__link last" value="">16</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value="">Спонсор</p>
+                                                    <p class="title-checkbox sort-name-list__link last" value="">16</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mail-filter__wrapper disabled">
+                                <h3 class="mail-filter__title">Активность</h3>
+                                <div class="mail-wrapper__inner">
+                                    <div class="container__filter-wrapper" id="">
+                                        <div class="filter-wrapper__header">
+                                            <img class='close-ico' src="../icons/close-ico.svg" alt="">
+                                        </div>
+                                        <div class="filter-wrapper__center-block">
+                                            <!-- УСТАНОВИТЬ ID LABEL'АМ -->
+                                            <div class="filter-wrapper__size-form">
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value="">Активные</p>
+                                                    <p class="title-checkbox sort-name-list__link" value="">423</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                                <label class='checkbox__wrapper sort-name__list'>
+                                                    <p class="title-checkbox sort-name-list__link word-of-size" value="">Неактивные</p>
+                                                    <p class="title-checkbox sort-name-list__link last" value="">16</p>
+                                                    <input name='' type="checkbox" class="check-company" id=''>
+                                                    <span class="check-style"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input__wrapper wrapper-textarea">
+                            <textarea id='area' placeholder="Вы великолепны!" maxlength="500"></textarea>
+                        </div>
+                    </div>
+                    <div class="mail-btns">
+                        <input type="submit" class="mail-btn" value="Сделать рассылку">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer class="footer aut__footer">
+        <div class="container">
+            <div class="footer__electio-info">
+                <a class="electio-info__link" href=""> Правила пользования сайтом</a>
+                <a class="electio-info__link footer-info__doc" href=""> Документация</a>
+                <a class="electio-info__link footer-info__faq" href=""> FAQ</a>
+                <a class="electio-info__link link-author" href=""> © Electio 2020</a>
+            </div>
+            <div class="footer__electio-contacts">
+                <div class="footer__social-btn-cont">
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__tw" href="#">Чат с администрацией</a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__be" href="#"></a>
+                    <a class="electio-info__link social-btn__circle-pos footer__social-btn__inst" href="#"></a>
+                </div>
+                <div class="footer__another-cont">
+                    <a class="electio-info__link" href="#">something@gmail.com</a>
+                    <a class="electio-info__link" href="#">+8 (812) 123-45-67</a>
+                    <a class="electio-info__link link-city" href="#">Россия</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='../js/moment.min.js'></script>
+    <script type='text/javascript' src='../js/daterangepicker.js'></script>
+    <script type='text/javascript' src='../js/libs/analitc-users.js'></script>
+    <script src='../js/jquery.formstyler.min.js'></script>
+    <script src='../js/range-picker.js'></script>
+    <script src='../js/ui-touch.min.js'></script>
+    <script type = 'text/javascript' src='../js/libs/scroll-header.js'></script>
+    <script type = 'text/javascript' src='../js/libs/tab-drop.js'></script>
+    <script type = 'text/javascript' src='../js/libs/cat-add-filter.js'></script>
+    <script type = 'text/javascript' src='../js/libs/mailing.js'></script>
+</body>
+</html>

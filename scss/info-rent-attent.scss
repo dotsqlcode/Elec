@@ -1,0 +1,81 @@
+.dratute, .dratute-info-block, .smth-triangle {
+    display: none;
+}
+@media(max-width: 376px) {
+    /* WINDOW AFTER CLICK INFO ICO */
+    .remainder-time__decor-block, .second-stage__btns-container, .arend-time__title{
+        position: relative;
+        .dratute {
+            display: block;
+            position: absolute;
+            width: calc(20vw / 375 * 100);
+            height: calc(20vw / 375 * 100);
+            right: calc(-30vw / 375 * 100);
+            top: calc(50% - (10vw / 375 * 100));
+        }
+        .dratute-info-block {
+            display: block;
+            position: absolute;
+            background:#ffffff;
+            padding: calc(13vw / 375  * 100);
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            bottom: calc(35vw / 375 * 100);
+            left: 0;
+            border:  1px solid #EAEAEA;
+            border-radius: calc(10vw / 375 * 100);
+            width: calc(320vw / 375 * 100);
+            &:hover {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            .smth-in-dratute-block {
+                margin: 0;
+                margin-bottom: calc(10vw / 375 * 100);
+                font-size: calc(12vw / 375 * 100);
+                line-height: 150%;
+                color: #807F92;
+                font-weight: 400;
+            }
+        }
+        .smth-triangle {
+            display: block;
+            img {
+                width: calc(24vw / 375 * 100);
+                height: calc(16vw / 375 * 100);
+                position: absolute;
+                top: calc(-10vw / 375 * 100);
+                transform: rotate(180deg);
+                right: calc(-32vw / 375 * 100);
+                z-index: 1;
+            }
+        }
+    }
+    .second-stage__btns-container .dratute {
+        top: calc((50vw / 375 * 100 / 2) - (10vw / 375 * 100));
+    }
+    .second-stage__btns-container .dratute-info-block {
+        bottom: calc(114vw / 375 * 100);
+    }
+    .second-stage__btns-container .smth-triangle img {
+        top: calc(-7vw / 375 * 100);
+    }
+    .arend-time__title {
+        display: inline-block;
+        span {
+            position: relative;
+        }
+    }
+    .arend-time__title {
+        .dratute {
+            right: auto;
+            left: 27%;
+        }
+    }
+    .arend-time__title .smth-triangle img {
+        right: auto;
+        left: 26.3%;
+        top: calc(-38vw / 375 * 100);
+    }
+    /* WINDOW AFTER CLICK INFO ICO */
+}

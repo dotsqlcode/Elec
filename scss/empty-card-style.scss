@@ -1,0 +1,245 @@
+/*election-info__main-display*/
+.election-info__main-display {
+    margin: calc(270vw / 1920 * 100) calc(170vw / 1920 * 100) 160px 18.27vw;
+    background: url(../icons/add-prod-congrat-bg.svg);
+    background-repeat: no-repeat;
+    background-size: calc(661vw / 1920 * 100);
+    background-position: top right;
+    .second-stage__btns-container {
+        justify-content: start;
+        .add-prod__next-stage-btn {
+            margin-right: calc(32vw / 1920 * 100);
+        }
+        .add-prod__prev-stage-btn {
+            width: calc(216vw / 1920 * 100);
+            margin: 0;
+        }
+    }
+}
+.main-display__text-container {
+    padding-top: calc(35vw / 1920 * 100);
+    padding-bottom: calc(77vw / 1920 * 100);
+}
+.electio-info__title {
+    max-width: calc(960vw / 1920 * 100);
+    margin: 0;
+    padding-top: calc(40vw / 1920 * 100);
+    font-weight: 600;
+    font-size: calc(80vw / 1920 * 100);
+    line-height: 120%;
+    letter-spacing: -0.05em;
+    color: #2B2949;
+}
+.el-info__sub-title {
+    margin-top: 0;
+    margin-bottom: calc(51vw / 1920 * 100);
+    font-size: calc(24vw / 1920 * 100);
+    line-height: 120%;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: #807F92;
+}
+.md-electio-info__sub__text {
+    max-width: calc(936vw / 1920 * 100);
+    margin: 0;
+    margin-bottom: calc(40vw / 1920 * 100);
+    font-size: calc(24vw / 1920 * 100);
+    line-height: 160%;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+}
+/* EMPTY CARD MODIFICATE EL INFO DISP */
+.election-info__main-display {
+    background: url(../icons/empty-card-bg-ico.svg);
+    background-repeat: no-repeat;
+    background-size: calc(673vw / 1920 * 100);
+    background-position: top right;
+}
+.empty-card {
+    margin: calc(20vw / 1920 * 100) calc(200vw / 1920 * 100) 160px 18.27vw;
+    .electio-info__title {
+        padding-top: calc(130vw / 1920 * 100);
+        font-size: calc(60vw / 1920 * 100);
+        line-height: 120%;
+    }
+    .md-electio-info__sub__text {
+        margin-bottom: calc(158vw / 1920 * 100);
+        max-width: calc(714vw / 1920 * 100);
+    }
+}
+.second-stage__btns-container {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    .add-prod__next-stage-btn {
+        margin-right: calc(16vw / 1920 * 100);
+        padding: calc(33.5vw / 1920 * 100) calc(50vw / 1920 * 100);
+        font-weight: 500;
+        font-size: calc(18vw / 1920 * 100);
+        line-height: 0px;
+        color: white;
+        background: #2945FF;
+        box-sizing: border-box;
+        display: inline-block;
+        border-radius: 133.33px;
+    }
+}
+
+/* MEDIA */
+
+@media (max-width: 1000px) {
+    .container__filter-wrapper, .main-filter {
+        .back-arrow-ico {
+            top: 49px;
+            left: 24px;
+        }
+    }
+    .header__position-user {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .nav__container {
+        margin-left: auto;
+    }
+    body .header {
+        min-height: 90px;
+        background: linear-gradient(277.26deg, #C1F0FF -64.07%, #030094 78.24%);
+    }
+    .header.header-width-nav {
+        margin: 0;
+    }
+    .header__link-shop, .header__link-chat {
+        margin-right: 29px;
+        position: relative;
+        top: 3px;
+    }
+    .burger-block {
+        display: flex;
+    }
+    .header-serch__input-block {
+        display: block;
+    }
+    .polzunok-input-5-left, .polzunok-input-5-right {
+        max-width: 120px;
+    }
+    .wide-header__nav-container {
+        display: none;
+    }
+    body {
+        padding-top: 90px;
+    }
+    .wide-header-chat {
+        min-height: 0;
+    }
+    .chat {
+        margin-top: 64px;
+    }
+    .empty-element {
+        display: none;
+    }
+    body .aut__footer {
+        margin: 0px 20px 0px 20px;
+    }
+}
+/* WORK WITH MODIFY */
+.disabled {
+    display: none;
+}
+.add-prod__next-stage-btn:hover {
+    background: #2972FF;
+    transition: background 0.25s ease;
+}
+@media (max-width: 1000px) {
+    .election-info__main-display.empty-card {
+        margin: 43vw 22.3vw 200px 20.5vw;
+        min-width: 59.1vw;
+        min-height: 68.5vw;
+    }
+    .election-info__main-display {
+    background-size: 59vw;
+    }
+    .electio-info__title {
+        padding: 0;
+        position: absolute;
+        top: 33vw;
+        left: 20px;
+    }
+    .empty-card .electio-info__title {
+        padding: 0;
+        font-size: 4.8vw;
+    }
+    .empty-card .md-electio-info__sub__text {
+        max-width: 73.2vw;
+        font-size: 2.4vw;
+        margin-bottom: 0;
+        position: absolute;
+        top: 40.5vw;
+        left: 20px;
+    }
+    .main-display__text-container {
+        padding: 0;
+        margin-top: auto;
+        height: 100%;
+        width: 100%;
+    }
+    .second-stage__btns-container, .main-display__text-container, .main-display__container-inner {
+        height: 100%;
+    }
+    .second-stage__btns-container .add-prod__next-stage-btn {
+        padding: 3.3vw 5vw;
+        font-size: 1.8vw;
+        position: relative;
+        top: 65vw;
+        left: 15vw;
+    }
+}
+@media(max-width: 376px) {
+    .election-info__main-display.empty-card {
+        // margin: calc(116vw / 375 * 100) calc(10px + (25vw / 375 * 100)) 100px calc(10px + (25vw / 375 * 100));
+        margin: calc(116vw / 375 * 100) 10px 100px 10px;
+        position: relative;
+    }
+    .empty-card .electio-info__title {
+        font-size: calc(16vw / 375 * 100);
+        // left: (-25vw / 375 * 100);
+        left: 0;
+        position: relative;
+        top: 0;
+    }
+    .empty-card .md-electio-info__sub__text {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: calc(19vw / 375 * 100);
+    }
+    .empty-card .second-stage__btns-container {
+        margin-top: calc(390vw / 375 * 100);
+        .next-stage-btn {
+            width: 100%;
+        }
+    }
+    .second-stage__btns-container .add-prod__next-stage-btn {
+        top: 0;
+        left: 0;
+        padding: calc(18vw / 375 * 100) 0;
+        width: 100%;
+        font-size: calc(14vw / 375 * 100);
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .election-info__main-display {
+        background-size: calc(310vw / 375 * 100);
+        background-position: center center;
+    }
+    .empty-card .md-electio-info__sub__text {
+        max-width: none;
+        font-size: calc(14vw / 375 * 100);
+        line-height: 160%;
+        margin-bottom: calc(30vw / 375 * 100);
+    }
+}

@@ -1,0 +1,17 @@
+-2. font-size: calc(80vw / 1920 * 100);
+-1. font-size: calc(60vw / 1920 * 100);
+0. font-size: calc(48vw / 1920 * 100);
+1. font-size: calc(24vw / 1920 * 100);
+2. font-size: calc(18vw / 1920 * 100);
+3. font-size: calc(16vw / 1920 * 100);
+4. font-size: calc(14vw / 1920 * 100);
+5. font-size: calc(12vw / 1920 * 100);
+∨
+6. font-size: calc(80vw / 1920 * 100);
+7. font-size: calc(60vw / 1920 * 100);
+8. font-size: calc(48vw / 1000 * 100);
+9. font-size: calc(24vw / 1000 * 100);
+10. font-size: calc(18vw / 1000 * 100);
+11. font-size: calc(16vw / 1000 * 100);
+12. font-size: calc(14vw / 1000 * 100);
+13. font-size: calc(12vw / 1000 * 100);
