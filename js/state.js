@@ -60,7 +60,7 @@ $('document').ready(function() {
           if(data.success) {
             window.location = 'lk.html';
           } else {
-            alert('Неверные данные'); 
+            $('.form-register__descr .register__auth-link').show();
           }
         //   
         })
